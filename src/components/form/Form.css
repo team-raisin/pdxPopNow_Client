@@ -1,0 +1,25 @@
+section{
+  width: 50%;
+  margin: auto;
+  background: #b3b3b3;
+  padding: 2%;
+}
+form{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .7em;
+}
+
+form > * {
+  height: 2em;
+}
+
+textarea{
+  width: 50%;
+  height: 9em;
+  margin-top: .7em;
+}
+
+
+
