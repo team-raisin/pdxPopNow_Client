@@ -14,14 +14,15 @@ export default function Form({ onChange }) {
         <input type='text' name='Twitter' onChange={onChange} placeholder='Twitter' />
         <input type='text' name='Facebook' onChange={onChange} placeholder='Facebook' />
         <input type='text' name='Band Camp' onChange={onChange} placeholder='Band Camp' />
+        <textarea> </textarea>
         <select name='genre'>
           <option value="Indie">Indie</option>
           <option value="Rock">Rock</option>
           <option value="Hip-hop/Rap">Hip-hop/Rap</option>
           <option value="Country">Country</option>
-        </select>   
+        </select>  
       </form>
-      <textarea> </textarea>
+      <button>Submit</button> 
     </section>
     </>
   );
