@@ -10,9 +10,9 @@ export default class ArtistDetail extends PureComponent {
         <main className={styles.main}>
           <div className={styles.leftColumn}>
             <img src='https://upload.wikimedia.org/wikipedia/commons/1/19/Nirvana_around_1992.jpg'/>
-            <span>
-              <a href='https://www.facebook.com/Nirvana'>F</a>
-              <a href='https://twitter.com/Nirvana'>T</a>
+            <span className={styles.socialLinks}>
+              <a href='https://www.facebook.com/Nirvana'>Facebook</a>
+              <a href='https://twitter.com/Nirvana'>Twitter</a>
             </span>
           </div>
           <div className={styles.rightColumn}>
