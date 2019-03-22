@@ -1,0 +1,7 @@
+.artistList {
+  list-style-type: none;
+  
+  li {
+    padding: 1em;
+  }
+}

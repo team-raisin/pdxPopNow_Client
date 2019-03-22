@@ -1,5 +1,8 @@
 import React from 'react';
+import ArtistList from '../artists/ArtistList';
 
 export default function App() {
-  return <h1>Hello world</h1>;
+  return (
+    <ArtistList />
+  );
 }
