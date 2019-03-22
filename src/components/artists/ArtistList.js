@@ -5,6 +5,10 @@ import styles from '../../css/ArtistList.css';
 function ArtistList() {
   return (
     <>
+      <div>
+        <input type="text" name="search" placeholder="artist, band, genre" />
+        <button>Search</button>
+      </div>
       <h1>Artist List</h1>
       <ul className={styles.artistList}>
         <li>
