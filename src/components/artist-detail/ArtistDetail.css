@@ -1,0 +1,33 @@
+.backButton {
+    position: absolute;
+    left: 1em;
+    top: 1.3em;
+
+    font-size: 2em;
+    color: black;
+
+    border-radius: 2em;
+}
+.description {
+    padding: 2em;
+
+    font-weight: 300;
+}
+.name {
+    padding: 0.4em;
+    margin: 0;
+
+    font-size: 5em;
+    text-align: center;
+    background-color: rgb(217,83,79);
+    color: white;
+}
+.main {
+    display: flex;
+}
+.leftColumn {
+    background-clip: pink;
+}
+.rightColumn {
+    background-color: rgb(66, 72, 151);
+}
