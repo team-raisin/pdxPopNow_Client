@@ -1,7 +1,23 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
 .artistList {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  
+
+
   li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1em;
   }
 }

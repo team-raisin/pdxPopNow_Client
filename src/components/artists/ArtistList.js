@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from '../../css/ArtistList.css';
 
-
 function ArtistList() {
   return (
     <>
-      <div>
+      <div className={styles.search}>
         <input type="text" name="search" placeholder="artist, band, genre" />
         <button>Search</button>
       </div>
@@ -30,6 +29,10 @@ function ArtistList() {
         <li>
           <img src="https://via.placeholder.com/150" />
           Artist5
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/150" />
+          Artist6
         </li>
       </ul>
     </>
