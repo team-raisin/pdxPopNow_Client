@@ -1,13 +1,11 @@
 import React from 'react';
-import ArtistList from '../artists/ArtistList';
-import Header from '../header/Header';
+import AllArtists from '../../containers/AllArtists';
 
 export default function App() {
   return (
     <>
-    <Header />
-      <ArtistList />
-    <h1>Hello world</h1>
+      <AllArtists />
+      <h1>Hello world</h1>
     </>
   );
 }
