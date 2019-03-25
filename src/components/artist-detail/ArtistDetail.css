@@ -7,16 +7,41 @@
     color: black;
 
     border-radius: 2em;
+    border: 2px black solid;
+    animation: fade-in 2s ease-in;
+    animation-delay: 1s;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 20px rgb(137, 180, 255);
+    }
+}
+.background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    max-width: 100%;
+    z-index: -1;
 }
 .description {
     padding: 2em;
     margin: 0;
 
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.2em;
+}
+.description::first-letter {
+    font-size: 200%;
 }
 .genres {
     font-size: 1.2em;
+}
+.genresContainer {
+    padding: 1em;
+    background-color: white;
+
+    border: 3px rgb(137, 180, 255) groove;
 }
 .genreSongContainer {
     display: flex;
@@ -31,7 +56,9 @@
 .leftColumn {
     margin: 1em;
 
-    background-color: pink;
+    background-color: rgb(90, 200, 149);
+
+    border: 5px groove lightgray;
 }
 .name {
     padding: 0.4em;
@@ -39,29 +66,59 @@
 
     font-size: 5em;
     text-align: center;
-    background-color: rgb(217,83,79);
+    background-color: rgb(255, 153, 128);
     color: white;
+    text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+
+    border-bottom: 2px solid black;
+    animation: fade-in 1s ease-in;
 }
 .main {
     display: flex;
+
+    animation: fade-in 2s ease-in;
 }
 .rightColumn {
     margin: 1em;
 
-    background-color: rgb(66, 72, 151);
+    background-color: rgb(250, 235, 214);
+    
+    border: 5px groove lightgray;
+}
+.socialIcon {
+    display: inline-block;
+    max-width:57px;
+    max-height:30px;
+    width: auto;
+    height: auto;
 }
 .socialLinks {
     display: flex;
     justify-content: space-around;
 }
-.song {
+.songContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1em;
+
+    background-color: white;
+
+    border: 3px rgb(137, 180, 255) groove;
+    border-radius: 1em;
 }
 .songTitle {
     margin: 0.4em;
     max-width: 100%;
     
     font-size: 1.8em;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
