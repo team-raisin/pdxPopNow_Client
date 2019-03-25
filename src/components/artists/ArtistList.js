@@ -5,9 +5,10 @@ function ArtistList() {
   return (
     <>
       <div className={styles.search}>
-        <input type="text" name="search" placeholder="artist, band, genre" />
+        <input type="text" name="search" placeholder="Search artist, band, genre" />
         <button>Search</button>
       </div>
+
       <h1>Artist List</h1>
       <ul className={styles.artistList}>
         <li>
