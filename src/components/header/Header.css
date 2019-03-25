@@ -1,0 +1,11 @@
+.header {
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  z-index: -1;
+  position: relative;
+  width: 100%;
+}
