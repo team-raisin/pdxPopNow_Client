@@ -28,8 +28,8 @@ class Form extends PureComponent{
   render() {
     return (
       <>
-      <section>
         <h2>Create Artist Profile</h2>
+      <section>
         <form className={styles.createForm}>
           <input type='text' name='artistName' onChange={this.handleChange} placeholder='Artist Name/Band Name' />
           <input type='text' name='email' onChange={this.handleChange} placeholder='Email' />
