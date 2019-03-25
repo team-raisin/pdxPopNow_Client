@@ -16,11 +16,6 @@ export default class ArtistList extends PureComponent {
     });
     return (
       <section className={styles.artistListSection}>
-        <div className={styles.search}>
-          <input className={styles.searchInput} type="text" name="search" placeholder="Search artist, band, genre" />
-          <button>Search</button>
-        </div>
-        <h1>Artist List</h1>
         <ul className={styles.artistList}>
           { artistList }
         </ul>

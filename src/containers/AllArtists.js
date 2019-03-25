@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import ArtistList from '../components/artists/ArtistList';
+import ArtistSearch from '../components/artist-search/ArtistSearch';
 import { connect } from 'react-redux';
 import { getArtists } from '../selectors/artists';
 
@@ -16,7 +17,10 @@ class AllArtists extends PureComponent {
   render() {
     const { artists } = this.props;
     return (
-      <ArtistList artists={artists}/>
+      <>
+        <ArtistSearch/>
+        <ArtistList artists={artists}/>
+      </>
     );
   }
 }
