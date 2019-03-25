@@ -1,7 +1,11 @@
+body{
+  background-image: url("../../images/microphone-2130806_1920.jpg");
+
+}
 section{
   width: 50%;
   margin: auto;
-  background: #b3b3b3;
+  background: rgba(238,238,300,0.3);
   padding: 2%;
 }
 form{
