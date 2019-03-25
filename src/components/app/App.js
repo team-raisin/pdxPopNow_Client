@@ -5,6 +5,7 @@ export default function App() {
   return (
     <>
       <AllArtists />
+      <h1>Hello world</h1>
     </>
   );
 }
