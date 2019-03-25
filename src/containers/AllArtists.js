@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import ArtistList from '../components/artists/ArtistList';
 import { connect } from 'react-redux';
 import { getArtists } from '../selectors/artists';
+import Header from '../components/header/Header';
+import Footer from '../components/footer/Footer';
 
 const mapStateToProps = state => ({
   artists: getArtists(state)
@@ -16,7 +18,11 @@ class AllArtists extends PureComponent {
   render() {
     const { artists } = this.props;
     return (
-      <ArtistList artists={artists}/>
+      <>
+        <Header />
+        <ArtistList artists={artists}/>
+        <Footer />
+      </>
     );
   }
 }
