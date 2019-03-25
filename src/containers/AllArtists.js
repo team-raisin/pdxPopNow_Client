@@ -14,11 +14,15 @@ class AllArtists extends PureComponent {
   static propTypes = {
     artists: PropTypes.array.isRequired
   }
+  handleSearch = state => {
+    event.preventDefault();
+    console.log('searched', state);
+  }
   render() {
     const { artists } = this.props;
     return (
       <>
-        <ArtistSearch/>
+        <ArtistSearch handleSearch={this.handleSearch}/>
         <ArtistList artists={artists}/>
       </>
     );

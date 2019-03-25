@@ -3,17 +3,24 @@ import styles from './ArtistSearch.css';
 import PropTypes from 'prop-types';
 
 export default class ArtistSearch extends PureComponent {
+  state = {
+    search: ''
+  }
   static propTypes = {
-    handleSubmit: PropTypes.func.isRequired
+    handleSearch: PropTypes.func.isRequired
+  }
+  handleChange = event => {
+    this.setState({ [event.target.name]: event.target.value });
+  }
+  handleSubmit = () => {
+    this.props.handleSearch(this.state.search);
   }
   render() {
     return (
-      <>
-        <div className={styles.search}>
-          <input className={styles.searchInput} type="text" name="search" placeholder="Search artist, band, genre" />
-          <button>Search</button>
-        </div>
-      </>
+      <form className={styles.search} onSubmit={this.handleSubmit}>
+        <input className={styles.searchInput} onChange={this.handleChange} type="text" name="search" placeholder="Search artist, band, genre" />
+        <button>Search</button>
+      </form>
     );
   }
 }
