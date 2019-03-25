@@ -15,11 +15,8 @@ class AllArtists extends PureComponent {
   }
   render() {
     const { artists } = this.props;
-    const artistList = artists.map((artist, i) => {
-      return <li key={i}>{ artist.name }</li>;
-    });
     return (
-      <ul>{artistList}</ul>
+      <ArtistList artists={artists}/>
     );
   }
 }
