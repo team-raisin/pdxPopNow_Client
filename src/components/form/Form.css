@@ -1,0 +1,36 @@
+body{
+  background-image: url("../../images/microphone-2130806_1920.jpg");
+
+}
+section{
+  width: 50%;
+  margin: auto;
+  border: 1px solid rgba(210,174,126,0.5);
+  padding: 2%;
+
+}
+h2{
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+form{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .7em;
+}
+
+form > * {
+  height: 2em;
+}
+
+textarea{
+
+  height: 9em;
+  margin-top: .7em;
+}
+
+
+
