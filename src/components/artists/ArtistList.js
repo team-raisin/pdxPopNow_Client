@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../css/ArtistList.css';
+import styles from './ArtistList.css';
 
 function ArtistList() {
   return (
