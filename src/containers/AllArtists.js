@@ -8,8 +8,6 @@ import { getArtists } from '../selectors/artists';
 const mapStateToProps = state => ({
   artists: getArtists(state)
 });
-
-
 class AllArtists extends PureComponent {
   static propTypes = {
     artists: PropTypes.array.isRequired
