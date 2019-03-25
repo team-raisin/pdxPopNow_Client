@@ -1,5 +1,7 @@
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
+const DotenvPlugin = require('dotenv-webpack');
+const CopyWebPackPlugin = require('copy-webpack-plugin');
 
 /* eslint-disable-next-line */
 module.exports = {
@@ -14,7 +16,9 @@ module.exports = {
   },
   plugins: [
     new HtmlPlugin({ template: './src/index.html' }),
-    new CleanPlugin('./dist')
+    new CleanPlugin('./dist'),
+    new DotenvPlugin({ systemvars: true }),
+    new CopyWebPackPlugin([{ from: 'public' }])
   ],
   module: {
     rules: [
