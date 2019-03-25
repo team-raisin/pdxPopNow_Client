@@ -1,0 +1,22 @@
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  
+    .searchInput {
+      width: 300px;
+      padding: 1em;
+      margin: 1em;;
+    }
+  
+    button {
+      width: 200px;
+      padding: 1em;
+      cursor: pointer;
+      &:hover {
+      background-color: grey;
+      transition: all .5s ease;
+      }
+    }
+}
