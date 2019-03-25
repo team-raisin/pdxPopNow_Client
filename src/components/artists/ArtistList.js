@@ -3,9 +3,9 @@ import styles from '../../css/ArtistList.css';
 
 function ArtistList() {
   return (
-    <>
+    <section className={styles.artistListSection}>
       <div className={styles.search}>
-        <input type="text" name="search" placeholder="Search artist, band, genre" />
+        <input className={styles.searchInput} type="text" name="search" placeholder="Search artist, band, genre" />
         <button>Search</button>
       </div>
 
@@ -48,7 +48,7 @@ function ArtistList() {
           Artist9
         </li>
       </ul>
-    </>
+    </section>
   );
 }
 
