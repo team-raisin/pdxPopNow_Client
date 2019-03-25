@@ -4,6 +4,8 @@ import ArtistList from '../components/artists/ArtistList';
 import ArtistSearch from '../components/artist-search/ArtistSearch';
 import { connect } from 'react-redux';
 import { getArtists } from '../selectors/artists';
+import Header from '../components/header/Header';
+import Footer from '../components/footer/Footer';
 
 const mapStateToProps = state => ({
   artists: getArtists(state)
@@ -20,8 +22,10 @@ class AllArtists extends PureComponent {
     const { artists } = this.props;
     return (
       <>
-        <ArtistSearch handleSearch={this.handleSearch}/>
+        <Header />
         <ArtistList artists={artists}/>
+        <ArtistSearch handleSearch={this.handleSearch}/>
+        <Footer />
       </>
     );
   }
