@@ -10,8 +10,23 @@
 }
 .description {
     padding: 2em;
+    margin: 0;
 
     font-weight: 300;
+    font-size: 1.2em;
+}
+.genres {
+    font-size: 1.2em;
+}
+.genreSongContainer {
+    display: flex;
+    justify-content: space-around;
+}
+.genreTitle {
+    margin: 0.4em;
+    
+    font-size: 1.8em;
+    text-align: center;
 }
 .leftColumn {
     margin: 1em;
@@ -38,4 +53,15 @@
 .socialLinks {
     display: flex;
     justify-content: space-around;
+}
+.song {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.songTitle {
+    margin: 0.4em;
+    max-width: 100%;
+    
+    font-size: 1.8em;
 }
