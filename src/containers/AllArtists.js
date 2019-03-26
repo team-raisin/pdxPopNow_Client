@@ -37,8 +37,8 @@ class AllArtists extends PureComponent {
     return (
       <>
         <Header />
-        <ArtistList artists={artists}/>
         <ArtistSearch handleSearch={this.handleSearch}/>
+        <ArtistList artists={artists}/>
         <Footer />
       </>
     );
