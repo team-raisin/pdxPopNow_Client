@@ -6,8 +6,8 @@ function ArtistList(props){
   const { artists } = props;
   const artistList = artists.map((artist, i) => { 
     return <li key={i}>
-      <img src={artist.url}/>
-      { artist.name }
+      <img src={artist.img}/>
+      { artist.artistName }
     </li>;
   });
   return (
