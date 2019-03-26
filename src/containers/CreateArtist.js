@@ -8,7 +8,24 @@ import { createArtist } from '../actions/artists';
 // });
 
 const mapDispatchToProps = dispatch => ({
-  createArtist: (artistName, email, profilePic) => dispatch(createArtist(artistName, email, profilePic))
+  createArtist: (
+    artistName, 
+    email, 
+    profilePic,
+    twitter,
+    website,
+    facebook,
+    bandCamp,
+    genre,
+    description) => dispatch(createArtist(artistName, 
+    email, 
+    profilePic,
+    twitter,
+    website,
+    facebook,
+    bandCamp,
+    genre,
+    description))
 
 });
 

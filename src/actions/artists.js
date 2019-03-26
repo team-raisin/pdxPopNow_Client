@@ -7,9 +7,25 @@ export const fetchArtists = () => ({
 });
 
 export const CREATE_ARTIST = 'CREATE_ARTIST';
-export const createArtist = (email, artistName, profilePic) => ({
+export const createArtist = (email, 
+  artistName, 
+  profilePic, 
+  twitter,
+  website,
+  facebook,
+  bandCamp,
+  genre,
+  description) => ({
   type: CREATE_ARTIST,
-  payload: { email, artistName, profilePic }
+  payload: { email, 
+    artistName, 
+    profilePic, 
+    twitter,
+    website,
+    facebook,
+    bandCamp,
+    genre,
+    description }
 });
 
 export const UPDATE_EMAIL = 'UPDATE_EMAIL';
