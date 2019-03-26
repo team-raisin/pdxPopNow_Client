@@ -10,7 +10,7 @@ class ArtistForm extends PureComponent {
   state = {
     email: '',
     artistName: '',
-    profilePic: '',
+    img: '',
     twitter: '',
     website: '',
     facebook: '',
@@ -25,7 +25,7 @@ class ArtistForm extends PureComponent {
     const { 
       email, 
       artistName, 
-      profilePic, 
+      img, 
       twitter,
       website,
       facebook,
@@ -37,7 +37,7 @@ class ArtistForm extends PureComponent {
 
     createArtist(email, 
       artistName, 
-      profilePic, 
+      img, 
       twitter,
       website,
       facebook,
@@ -61,7 +61,7 @@ class ArtistForm extends PureComponent {
   
           <input type='text' name='email' onChange={this.handleChange} placeholder='Email' />
   
-          <input type='text' name='profilePic' onChange={this.handleChange} placeholder='Profile Pic' />
+          <input type='text' name='img' onChange={this.handleChange} placeholder='Profile Pic' />
 
           <input type='text' name='twitter' onChange={this.handleChange} placeholder='Twitter' />
 
