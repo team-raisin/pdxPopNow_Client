@@ -1,10 +1,13 @@
 import React from 'react';
-import AllArtists from '../../containers/AllArtists';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import { getRoutes } from '../../routes/routes';
 
 export default function App() {
   return (
-    <>
-      <AllArtists />
-    </>
+    <Router>
+      <Switch>
+        {getRoutes()}
+      </Switch>
+    </Router>
   );
 }

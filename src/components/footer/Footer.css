@@ -1,0 +1,8 @@
+.footer {
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1em;
+  max-width: 100%;
+  text-align: center;
+}
