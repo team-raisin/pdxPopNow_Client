@@ -5,3 +5,17 @@ export const fetchArtists = () => ({
   type: FETCH_ARTISTS,
   payload: getArtists()
 });
+
+export const CREATE_ARTIST = 'CREATE_ARTIST';
+export const createArtist = artist => ({
+  type: CREATE_ARTIST,
+  payload: artist
+});
+
+export const UPDATE_EMAIL = 'UPDATE_EMAIL';
+export const updateEmail = email => ({
+  type: UPDATE_EMAIL,
+  payload: email
+});
+
+

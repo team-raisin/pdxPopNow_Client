@@ -6,3 +6,5 @@ export const getArtists = () => {
     { name: 'Drake', url:'https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fi.ytimg.com%2Fvi%2F7pgqf1hQ648%2Fmaxresdefault.jpg&f=1' }
   ]);
 };
+
+

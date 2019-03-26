@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import AllArtists from '../containers/AllArtists';
-import Form from '../components/form/Form';
+import CreateArtist from '../containers/CreateArtist';
 
 export const ROUTES = {
   Artist: {
@@ -10,10 +10,10 @@ export const ROUTES = {
     linkTo: () => '/artists'
   },
 
-  Form: {
-    path: '/form',
-    Component: Form,
-    linkTo: () => '/form'
+  ArtistForm: {
+    path: '/artistform',
+    Component: CreateArtist,
+    linkTo: () => '/artistsform'
   }
 };
 
