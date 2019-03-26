@@ -11,6 +11,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   handleSubmit(email, event) {
     event.preventDefault();
+    console.log('!!!!', event);
     dispatch(createArtist({ email }));
   },
 
