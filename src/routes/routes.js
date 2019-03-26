@@ -1,12 +1,18 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import AllArtists from '../containers/AllArtists';
+import CreateArtist from '../containers/CreateArtist';
 
 export const ROUTES = {
   Artist: {
     path: '/artists',
     Component: AllArtists,
     linkTo: () => '/artists'
+  },
+  ArtistForm: {
+    path: '/artistform',
+    Component: CreateArtist,
+    linkTo: () => '/artistsform'
   }
 };
 
