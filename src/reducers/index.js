@@ -3,4 +3,5 @@ import artists from './artists';
 
 export default combineReducers({
   artists
+
 });
