@@ -4,7 +4,7 @@ import ArtistList from '../components/artists/ArtistList';
 import ArtistSearch from '../components/artist-search/ArtistSearch';
 import { connect } from 'react-redux';
 import { getArtists } from '../selectors/artists';
-import { fetchArtists } from '../actions/Form';
+import { fetchArtists } from '../actions/artists';
 
 const mapStateToProps = state => ({
   artists: getArtists(state)

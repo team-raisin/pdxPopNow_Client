@@ -3,8 +3,8 @@ export const getArtists = state => {
 };
 
 //
-export const getArtistArray = state => {
-  return state.artistArray; 
-};
+// export const getArtistArray = state => {
+//   return state.artists.artists; 
+// };
 
 
