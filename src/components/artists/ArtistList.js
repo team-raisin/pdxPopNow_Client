@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 
 function ArtistList(props){
   const { artists } = props;
+  console.log(artists[0], 'artistsList');
   const artistList = artists.map((artist, i) => { 
     return <li key={i}>
-      <img src={artist.url}/>
-      { artist.name }
+      <img src={artist.img}/>
+      { artist.artistName }
     </li>;
   });
   return (
