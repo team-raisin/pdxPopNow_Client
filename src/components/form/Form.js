@@ -1,19 +1,20 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import styles from './Form.css';
+import PropTypes from 'prop-types';
 
 class Form extends PureComponent{
-  state = {
-    artistName: '',
-    email: '',
-    profilePic: '',
-    twitter: '',
-    website: '',
-    facebook: '',
-    bandCamp: '',
-    genre: '',
-    description: ''
-  }
+  // state = {
+  //   artistName: '',
+  //   email: '',
+  //   profilePic: '',
+  //   twitter: '',
+  //   website: '',
+  //   facebook: '',
+  //   bandCamp: '',
+  //   genre: '',
+  //   description: ''
+  // }
 
   static propTypes = {
     handleChange: PropTypes.func
