@@ -1,12 +1,10 @@
 import { 
   FETCH_ARTISTS,
-  CREATE_ARTIST,
-  UPDATE_EMAIL
+  CREATE_ARTIST
 } from '../actions/artists';
 
 const initialState = {
-  artists: [],
-  email: ''
+  artists: []
 };
 
 export default function reducer(state = initialState, { type, payload }) {
@@ -20,11 +18,7 @@ export default function reducer(state = initialState, { type, payload }) {
         ...state,
         artists: [...state.artists, payload]
       };
-    case UPDATE_EMAIL:
-      return {
-        ...state,
-        email: payload
-      };
+
     default: return state;
   }
 }
