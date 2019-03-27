@@ -9,9 +9,15 @@ export const getSearchArtist = state => {
 export const getFilteredArtists = state => {
   const searchTerm = getSearchArtist(state);
   return getArtists(state).filter(artist => {
-    return artist.artistName.includes(searchTerm) || artist.genre.includes(searchTerm);
+    return artist.genre.includes(searchTerm) || artist.artistName.includes(searchTerm);
   });
 };
+// export const getFilteredArtists = state => {
+//   const searchTerm = getSearchArtist(state);
+//   return getArtists(state).filter(artist => {
+//     return artist.artistName.includes(searchTerm) || artist.genre.includes(searchTerm);
+//   });
+// };
 
 
 
