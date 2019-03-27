@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import { getRoutes } from '../../routes/routes';
 import AllArtists from '../../containers/AllArtists';
 // import ArtistForm from '../../components/form/ArtistForm';
-import ArtistDetail from '../../components/artist-detail/ArtistDetail';
+import ArtistByID from '../../containers/ArtistByID';
 // import { login } from '../../services/auth';
 import Callback from '../../containers/auth/Callback';
 // import { withSession } from '../../containers/auth/withSession';
@@ -13,7 +13,7 @@ export default function App() {
     <Router>
       <Switch>
         <Route path="/callback" component={Callback} />
-        <Route path="/:id" component={ArtistDetail} />
+        <Route path="/artist/:id" component={ArtistByID} />
         <Route path="/" component={AllArtists} />
       </Switch>
     </Router>

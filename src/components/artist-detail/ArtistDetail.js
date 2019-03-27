@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './ArtistDetail.css';
+import PropTypes from 'prop-types';
 
-export default function ArtistDetail() {
+export default function ArtistDetail({ artist }) {
+  console.log(artist);
   return (
       <>
         <img className={styles.background} src='src/assets/symphony.png'/>
@@ -9,7 +11,7 @@ export default function ArtistDetail() {
         <h3 className={styles.name}>Nirvana</h3>
         <main className={styles.main}>
           <div className={styles.leftColumn}>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/1/19/Nirvana_around_1992.jpg'/>
+            <img className={styles.picture} src={artist.img}/>
             <span className={styles.socialLinks}>
               <a href='https://www.facebook.com/Nirvana'>
                 <img className={styles.socialIcon} src='https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Flearningfromdocumenta.org%2Fwp-content%2Fuploads%2F2016%2F05%2Ffacebook_logo_300x300px_grayscale.png&f=1'/>
@@ -45,3 +47,7 @@ export default function ArtistDetail() {
       </>
   );
 }
+
+ArtistDetail.propTypes = {
+  artist: PropTypes.object.isRequired
+};
