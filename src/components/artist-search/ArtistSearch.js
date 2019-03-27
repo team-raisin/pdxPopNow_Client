@@ -7,14 +7,26 @@ export default class ArtistSearch extends PureComponent {
     search: ''
   }
   static propTypes = {
-    handleSearch: PropTypes.func.isRequired
+    // handleSearch: PropTypes.func.isRequired,
+    artistSearch: PropTypes.func
   }
+
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value });
+    const { artistSearch } = this.props;
+    const { search } = this.state;
+    // this.props.handleSearch(this.state.search);
+    artistSearch(search);
   }
-  handleSubmit = () => {
-    this.props.handleSearch(this.state.search);
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const { artistSearch } = this.props;
+    const { search } = this.state;
+    // this.props.handleSearch(this.state.search);
+    artistSearch(search);
   }
+
   render() {
     return (
       <form className={styles.search} onSubmit={this.handleSubmit}>

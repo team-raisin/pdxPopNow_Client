@@ -29,6 +29,14 @@ export const createArtist = (email,
     description }) 
 });
 
+export const ARTIST_SEARCH = 'ARTIST_SEARCH';
+export const artistSearch = search => ({
+  type: ARTIST_SEARCH,
+  payload: search
+});
+
+
+//we might be able to delet these two
 export const UPDATE_EMAIL = 'UPDATE_EMAIL';
 export const updateEmail = email => ({
   type: UPDATE_EMAIL,
