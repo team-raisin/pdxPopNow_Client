@@ -22,7 +22,7 @@ export const createArtist = (
   vimeo,
   genre,
   description
-  ) => ({
+) => ({
   type: CREATE_ARTIST,
   payload: postArtist({ 
     artistName, 
