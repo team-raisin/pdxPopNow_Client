@@ -7,15 +7,22 @@ export const fetchArtists = () => ({
 });
 
 export const CREATE_ARTIST = 'CREATE_ARTIST';
-export const createArtist = (email, 
+export const createArtist = (
+  email, 
   artistName, 
   img, 
   twitter,
   website,
   facebook,
   bandCamp,
+  soundcloud,
+  instagram,
+  youtube,
+  vimeo,
+  contact,
   genre,
-  description) => ({
+  description
+  ) => ({
   type: CREATE_ARTIST,
   payload: postArtist({ 
     email, 
@@ -25,8 +32,14 @@ export const createArtist = (email,
     website,
     facebook,
     bandCamp,
+    soundcloud,
+    instagram,
+    youtube,
+    vimeo,
+    contact,
     genre,
-    description }) 
+    description 
+  }) 
 });
 
 export const UPDATE_EMAIL = 'UPDATE_EMAIL';
