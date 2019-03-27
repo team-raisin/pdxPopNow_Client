@@ -4,14 +4,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AllArtists from '../../containers/AllArtists';
 // import { login } from '../../services/auth';
 import Callback from '../../containers/auth/Callback';
+import CreateArtist from '../../containers/CreateArtist';
 
 export default function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/callback" component={Callback} />
-        <Route path="/" component={AllArtists} />
-      </Switch>
-    </Router>
+    <CreateArtist/>
   );
 }

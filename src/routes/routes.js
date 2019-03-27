@@ -4,16 +4,15 @@ import AllArtists from '../containers/AllArtists';
 import CreateArtist from '../containers/CreateArtist';
 
 export const ROUTES = {
+  ArtistForm: {
+    path: '/artistform',
+    Component: CreateArtist,
+    linkTo: () => '/artistform'
+  },
   Artist: {
     path: '/artists',
     Component: AllArtists,
     linkTo: () => '/artists'
-  },
-
-  ArtistForm: {
-    path: '/artistform',
-    Component: CreateArtist,
-    linkTo: () => '/artistsform'
   }
 };
 

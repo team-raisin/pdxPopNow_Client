@@ -1,4 +1,4 @@
-import { getArtists } from '../services/artists';
+import { getArtists, postArtist } from '../services/artists';
 
 export const FETCH_ARTISTS = 'FETCH_ARTISTS';
 export const fetchArtists = () => ({
@@ -17,7 +17,8 @@ export const createArtist = (email,
   genre,
   description) => ({
   type: CREATE_ARTIST,
-  payload: { email, 
+  payload: postArtist({ 
+    email, 
     artistName, 
     img, 
     twitter,
@@ -25,7 +26,7 @@ export const createArtist = (email,
     facebook,
     bandCamp,
     genre,
-    description }
+    description }) 
 });
 
 export const UPDATE_EMAIL = 'UPDATE_EMAIL';
