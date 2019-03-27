@@ -2,15 +2,8 @@ import React from 'react';
 import styles from './ArtistDetail.css';
 import PropTypes from 'prop-types';
 
-var SC = require('soundcloud');
-
-SC.initialize({
-  client_id: 'https://soundcloud.com/brysonthealien',
-  redirect_uri: 'http://localhost:7890/artist/5c9bd93ff51a6750a290aef8'
-});
-
 export default function ArtistDetail({ artist }) {
-  console.log(artist);
+  
   return (
       <>
         <button className={styles.backButton}>←</button>

@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { fetchArtist } from '../actions/artists';
 import { getArtist } from '../selectors/artistDetail';
 import ArtistDetail from '../components/artist-detail/ArtistDetail';
+import { getSoundCloudId } from '../services/soundcloud';
 
 const mapStateToProps = state => ({
   artist: getArtist(state)
@@ -26,6 +27,10 @@ class ArtistById extends PureComponent {
   }
   componentDidMount() {
     this.props.fetch();
+    getSoundCloudId('https://cors-anywhere.herokuapp.com/https://soundcloud.com/brysonthealien')
+      .then(res => {
+        console.log(res);
+      });
   }
   render() {
     const { artist } = this.props;

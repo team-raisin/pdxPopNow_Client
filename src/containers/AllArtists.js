@@ -26,9 +26,6 @@ class AllArtists extends PureComponent {
   componentDidMount() {
     this.props.fetch();
   }
-  handleClick = () => {
-    console.log('clicked');
-  }
   handleSearch = state => {
     event.preventDefault();
     console.log('searched', state);
@@ -40,7 +37,7 @@ class AllArtists extends PureComponent {
       <>
         <Header />
         <ArtistSearch handleSearch={this.handleSearch}/>
-        <ArtistList artists={artists} handleClick={this.handleClick}/>
+        <ArtistList artists={artists}/>
         <Footer />
       </>
     );
