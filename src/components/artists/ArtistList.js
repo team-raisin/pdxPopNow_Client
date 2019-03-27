@@ -6,9 +6,8 @@ import { Link } from 'react-router-dom';
 function ArtistList(props){
   const { artists, handleClick } = props;
   const artistList = artists.map((artist, i) => { 
-    return <Link to={`/artist/${artist._id}`} key={i}><li onClick={handleClick}><img src={artist.img}/>{ artist.artistName }</li></Link>;
+    return <Link className={styles.link} to={`/artist/${artist._id}`} key={i}><li onClick={handleClick}><img src={artist.img}/>{ artist.artistName }</li></Link>;
   });
-  console.log(artists[0]);
   return (
     <section className={styles.artistListSection}>
       <ul className={styles.artistList}>
