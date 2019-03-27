@@ -2,6 +2,13 @@ import React from 'react';
 import styles from './ArtistDetail.css';
 import PropTypes from 'prop-types';
 
+var SC = require('soundcloud');
+
+SC.initialize({
+  client_id: 'https://soundcloud.com/brysonthealien',
+  redirect_uri: 'http://localhost:7890/artist/5c9bd93ff51a6750a290aef8'
+});
+
 export default function ArtistDetail({ artist }) {
   console.log(artist);
   return (
@@ -34,10 +41,7 @@ export default function ArtistDetail({ artist }) {
                 </ul>
               </div>
               <div className={styles.songContainer}>
-                <h4 className={styles.songTitle}>&#34;Smells Like Teen Spirit&#34;</h4>
-                <audio controls>
-                  <source src='src/assets/song.mp3' type='audio/mpeg'/>
-                </audio>
+                <iframe width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/183246622&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
               </div>
             </div>
           </div>
