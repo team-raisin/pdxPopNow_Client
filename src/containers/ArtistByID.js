@@ -18,25 +18,27 @@ const mapDispatchToProps = (dispatch, props) => ({
 });
 
 class ArtistById extends PureComponent {
-  state = {
-    artist: {}
-  }
   static propTypes = {
     fetch: PropTypes.func.isRequired,
     artist: PropTypes.object
   }
   componentDidMount() {
     this.props.fetch();
-    getSoundCloudId('https://cors-anywhere.herokuapp.com/https://soundcloud.com/brysonthealien')
-      .then(res => {
-        console.log(res);
-      });
+    setTimeout(() => {
+      console.log('help', this.props.artist.soundcloud);
+      getSoundCloudId(`https://cors-anywhere.herokuapp.com/${this.props.artist.soundcloud}`)
+        .then(res => {
+          console.log(res);
+        });
+    }, 2000);
+    
   }
   render() {
     const { artist } = this.props;
+    console.log(artist);
     if(!artist) return null;
     return (
-      <ArtistDetail artist={artist}/>
+      <ArtistDetail artist={artist} />
     );
   }
 }
