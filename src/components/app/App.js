@@ -11,7 +11,7 @@ export default function App() {
     <Router>
       <Switch>
         <Route path="/callback" component={Callback} />
-        <Route path="/" component={withSession(AllArtists)} />
+        <Route path="/" component={AllArtists} />
       </Switch>
     </Router>
   );
