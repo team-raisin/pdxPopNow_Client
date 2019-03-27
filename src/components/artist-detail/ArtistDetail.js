@@ -6,32 +6,30 @@ export default function ArtistDetail({ artist }) {
   console.log(artist);
   return (
       <>
-        <img className={styles.background} src='src/assets/symphony.png'/>
         <button className={styles.backButton}>←</button>
-        <h3 className={styles.name}>Nirvana</h3>
+        <h3 className={styles.name}>{artist.artistName}</h3>
         <main className={styles.main}>
           <div className={styles.leftColumn}>
             <img className={styles.picture} src={artist.img}/>
             <span className={styles.socialLinks}>
-              <a href='https://www.facebook.com/Nirvana'>
+              <a href={artist.facebook}>
                 <img className={styles.socialIcon} src='https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Flearningfromdocumenta.org%2Fwp-content%2Fuploads%2F2016%2F05%2Ffacebook_logo_300x300px_grayscale.png&f=1'/>
               </a>
-              <a href='https://twitter.com/Nirvana'>
+              <a href={artist.twitter}>
                 <img className={styles.socialIcon} src='https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iconsdb.com%2Ficons%2Fpreview%2Fgray%2Ftwitter-xxl.png&f=1'/>
               </a>
             </span> 
           </div>
           <div className={styles.rightColumn}>
             <span>
-              <p className={styles.description}>Nirvana was an American rock band formed in Aberdeen, Washington, in 1987. It was founded by lead singer and guitarist Kurt Cobain and bassist Krist Novoselic. Nirvana went through a succession of drummers, the longest-lasting and best-known being Dave Grohl, who joined in 1990.</p>
+              <p className={styles.description}>{artist.description}</p>
             </span>
             <div className={styles.genreSongContainer}>
               <div className={styles.genresContainer}>
                 <h4 className={styles.genreTitle}>Genre</h4>
                 <ul>
                   <div className={styles.genres}>
-                    <li>Alternative Rock</li>
-                    <li>Grunge</li>
+                    <li>{artist.genre[0]}</li>
                   </div>
                 </ul>
               </div>

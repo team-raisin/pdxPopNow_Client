@@ -16,14 +16,6 @@
         box-shadow: 0 0 20px rgb(137, 180, 255);
     }
 }
-.background {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    max-width: 100%;
-    z-index: -1;
-}
 .description {
     padding: 2em;
     margin: 0;
