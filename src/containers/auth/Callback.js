@@ -20,7 +20,7 @@ class Callback extends React.PureComponent {
     if(this.props.token) {
       return <Redirect to={ROUTES.ArtistForm.linkTo()} />;
     }
-    return <h1>LOADING</h1>;
+    return <img src='src/assets/svg/vinyl-record.svg' alt="vinyl record loader" />;
   }
 }
 
