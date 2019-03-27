@@ -1,4 +1,4 @@
-import { SET_TOKEN } from '../actions/session';
+import { SET_SESSION } from '../actions/session';
 
 const initialState = {
   token: '',
@@ -9,7 +9,7 @@ const initialState = {
 
 export default function reducer(state = initialState, { type, payload }) {
   switch(type) {
-    case SET_TOKEN:
+    case SET_SESSION:
       return { ...state, ...payload };
     default:
       return state;
