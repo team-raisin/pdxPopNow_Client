@@ -12,12 +12,16 @@ export const login = () => {
   auth0.authorize();
 };
 
+export const logout = () => {
+  auth0.logout();
+};
+
 export const handleAuth = () => {
   return new Promise((resolve, reject) => {
     auth0.parseHash((err, result) => {
       if(result && result.accessToken && result.idToken) {
         return auth0.client.userInfo(result.accessToken, (err, user) => {
-          console.log(user);
+          if(err) return reject(err);
           return resolve({
             token: result.idToken,
             id: user.sub,
@@ -25,8 +29,9 @@ export const handleAuth = () => {
             email: user.email
           });
         });
+      } else {
+        reject(err || 'ERROR!');
       }
-      reject(err || 'ERROR!');
     });
   });
 };
