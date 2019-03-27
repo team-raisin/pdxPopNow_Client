@@ -89,10 +89,31 @@ class ArtistForm extends PureComponent {
           <input type='text' name='vimeo' onChange={this.handleChange} placeholder='Vimeo URL' />  
 
           <select name='genre' onChange={this.handleChange}>
-            <option name='genre' value="indie">Indie</option>
-            <option name='genre' value="rock">Rock</option>
-            <option name='genre' value="hip-hop/rap">Hip-hop/Rap</option>
-            <option name='genre' value="country">Country</option>
+            <option name='genre' value="Acoustic">Acoustic</option>
+            <option name='genre' value="Blues">Blues</option>
+            <option name='genre' value="Country">Country</option>
+            <option name='genre' value="Edm">EDM</option>
+            <option name='genre' value="Electro">Electro</option>
+            <option name='genre' value="Experimental">Experimental</option>
+            <option name='genre' value="Folk">Folk</option>
+            <option name='genre' value="Funk">Funk</option>
+            <option name='genre' value="Garage">Garage</option>
+            <option name='genre' value="Indie">Indie</option>
+            <option name='genre' value="Jazz">Jazz</option>
+            <option name='genre' value="Metal">Metal</option>
+            <option name='genre' value="Pop">Pop</option>
+            <option name='genre' value="Psych">Psych</option>
+            <option name='genre' value="Punk">Punk</option>
+            <option name='genre' value="R&amp;b">R&amp;B</option>
+            <option name='genre' value="Rap">Rap</option>
+            <option name='genre' value="Reggae">Reggae</option>
+            <option name='genre' value="Regular">Regular</option>
+            <option name='genre' value="Rock">Rock</option>
+            <option name='genre' value="Hip-Hop/rap">Hip-hop/Rap</option>
+            <option name='genre' value="Country">Country</option>
+            <option name='genre' value="Soul">Soul</option>
+            <option name='genre' value="Techno">Techno</option>
+            <option name='genre' value="World">World</option>
           </select>
 
           <textarea name="description" placeholder="Please include a short bio" onChange={this.handleChange}></textarea>
