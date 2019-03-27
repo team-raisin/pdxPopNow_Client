@@ -34,6 +34,7 @@ class AllArtists extends PureComponent {
 
   render() {
     const { artists } = this.props;
+    console.log(artists, 'allartists');
     return (
       <>
         <Header />
