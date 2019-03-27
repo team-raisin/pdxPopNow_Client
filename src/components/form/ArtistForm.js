@@ -8,42 +8,60 @@ class ArtistForm extends PureComponent {
   }
 
   state = {
-    email: '',
-    artistName: '',
-    img: '',
-    twitter: '',
-    website: '',
-    facebook: '',
-    bandCamp: '',
-    genre: '',
-    description: ''
+    artistName: '', 
+    contact:'',
+    email:'', 
+    img:'', 
+    website:'',
+    facebook:'',
+    twitter:'',
+    instagram:'',
+    bandcamp:'',
+    soundcloud:'',
+    youtube:'',
+    vimeo:'',
+    genre:'',
+    description: '' 
   }
 
   handleSubmit = e => {
     e.preventDefault();
 
     const { 
-      email, 
       artistName, 
+      contact,
+      email, 
       img, 
-      twitter,
       website,
       facebook,
-      bandCamp,
+      twitter,
+      instagram,
+      bandcamp,
+      soundcloud,
+      youtube,
+      vimeo,
       genre,
-      description } = this.state;
+      description  
+    } = this.state;
 
     const { createArtist } = this.props;
 
-    createArtist(email, 
+    createArtist( 
       artistName, 
+      contact,
+      email, 
       img, 
-      twitter,
       website,
       facebook,
-      bandCamp,
+      twitter,
+      instagram,
+      bandcamp,
+      soundcloud,
+      youtube,
+      vimeo,
       genre,
-      description);
+      description
+    );
   }
 
   handleChange = ({ target }) => {
@@ -57,19 +75,18 @@ class ArtistForm extends PureComponent {
       <h2>Create Artist Profile</h2>
       <section>
         <form className={styles.createForm} onSubmit={this.handleSubmit}>
-          <input type='text' name='artistName'  placeholder='Artist Name/Band Name' onChange={this.handleChange} />
-  
+          <input type='text' name='artistName' onChange={this.handleChange} placeholder='Artist Name/Band Name' />
+          <input type='text' name='contact' onChange={this.handleChange} placeholder='Contact'  />
           <input type='text' name='email' onChange={this.handleChange} placeholder='Email' />
-  
-          <input type='text' name='img' onChange={this.handleChange} placeholder='Profile Pic' />
-
-          <input type='text' name='twitter' onChange={this.handleChange} placeholder='Twitter' />
-
-          <input type='text' name='website' onChange={this.handleChange} placeholder='Website' />
-
-          <input type='text' name='facebook' onChange={this.handleChange} placeholder='Facebook' />
-
-          <input type='text' name='bandCamp' onChange={this.handleChange} placeholder='Band Camp' /> 
+          <input type='text' name='img' onChange={this.handleChange} placeholder='Photo URL' />
+          <input type='text' name='website' onChange={this.handleChange} placeholder='Website URL' />
+          <input type='text' name='facebook' onChange={this.handleChange} placeholder='Facebook URL' />
+          <input type='text' name='twitter' onChange={this.handleChange} placeholder='Twitter URL' />
+          <input type='text' name='instagram' onChange={this.handleChange} placeholder='Instagram URL' />
+          <input type='text' name='bandcamp' onChange={this.handleChange} placeholder='Bandcamp URL' />
+          <input type='text' name='soundcloud' onChange={this.handleChange} placeholder='Soundcloud URL' />  
+          <input type='text' name='youtube' onChange={this.handleChange} placeholder='Youtube URL' />  
+          <input type='text' name='vimeo' onChange={this.handleChange} placeholder='Vimeo URL' />  
 
           <select name='genre' onChange={this.handleChange}>
             <option name='genre' value="acoustic">Acoustic</option>
@@ -98,7 +115,7 @@ class ArtistForm extends PureComponent {
             <option name='genre' value="world">World</option>
           </select>
 
-          <textarea name="description" placeholder="Describe yourself/band..." onChange={this.handleChange}></textarea>
+          <textarea name="description" placeholder="Please include a short bio" onChange={this.handleChange}></textarea>
           <button>Submit</button> 
         </form>
       </section>
