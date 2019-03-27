@@ -9,12 +9,13 @@ export const getSearchArtist = state => {
 export const getFilteredArtists = state => {
   const searchTerm = getSearchArtist(state);
   return getArtists(state).filter(artist => {
-    return artist.artistName.includes(searchTerm);
+    return artist.artistName.includes(searchTerm) || artist.genre.includes(searchTerm);
   });
 };
 
 
-//check to see if we still need this or not
+
+//Johnny needs to check if we still need this which we most likely dont
 export const getEmail = state => {
   return state.artists.email;
 };
