@@ -13,16 +13,7 @@ export const getFilteredArtists = state => {
   });
 };
 
-
-
 //Johnny needs to check if we still need this which we most likely dont
 export const getEmail = state => {
   return state.artists.email;
 };
-
-
-// export const getArtistArray = state => {
-//   return state.artists.artists; 
-// };
-
-
