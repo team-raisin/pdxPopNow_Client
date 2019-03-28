@@ -26,7 +26,6 @@ class ArtistForm extends PureComponent {
 
   handleSubmit = e => {
     e.preventDefault();
-
     const { 
       artistName, 
       contact,
