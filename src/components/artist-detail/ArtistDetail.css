@@ -200,3 +200,17 @@
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+@media screen and (max-width: 1000px) {
+    .iframe {
+        width: 50%;
+        height: 600;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .pictureContainer {
+        width: 70%;
+    }
+}
