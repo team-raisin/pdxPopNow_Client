@@ -3,25 +3,30 @@ import { Route } from 'react-router-dom';
 import AllArtists from '../containers/AllArtists';
 import CreateArtist from '../containers/CreateArtist';
 import Callback from '../containers/auth/Callback';
-import { withSession } from '../containers/auth/withSession';
+// import { withSession } from '../containers/auth/withSession';
+import ArtistByID from '../containers/ArtistByID';
 
 export const ROUTES = {
   ArtistForm: {
     path: '/artistform',
-    Component: withSession(CreateArtist),
+    Component: CreateArtist,
     linkTo: () => '/artistform'
   },
 
   Artist: {
-    path: '/artists',
+    path: '/',
     Component: AllArtists,
-    linkTo: () => '/artists'
+    linkTo: () => '/'
   },
-  
   CALLBACK: {
     path: '/callback',
     Component: Callback,
     linkTo: () => '/callback'
+  },
+  ArtistByID: {
+    path: '/:id',
+    Component: ArtistByID,
+    linkTo: () => '/:id'
   }
 };
 
