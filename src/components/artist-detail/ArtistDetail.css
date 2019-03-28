@@ -1,39 +1,52 @@
 .backButton {
     position: absolute;
-    left: 1em;
-    top: 1.3em;
+    left: 5%;
+    top: 4.5%;
 
-    font-size: 2em;
-    color: black;
+    font-size: 400%;
+    color: rgb(27, 27, 27);
 
-    border-radius: 2em;
-    border: 2px black solid;
-    animation: fade-in 2s ease-in;
-    animation-delay: 1s;
-
+    text-decoration: none;
     &:hover {
         cursor: pointer;
-        box-shadow: 0 0 20px rgb(137, 180, 255);
+        box-shadow: 0 0 20px white;
     }
 }
+.contactSection {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 1%;
+}
+.contactMe {
+    width: 100%;
+    text-align: center;
+    font-size: 280%;
+    font-weight: 800;
+}
 .description {
-    padding: 2em;
     margin: 0;
+    height: 100%;
+    width: 100%;
 
+    line-height: 160%;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 170%;
 }
 .description::first-letter {
     font-size: 200%;
+    color: #FA9314;
+    text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 .genres {
     font-size: 1.2em;
+    text-align: center;
 }
 .genresContainer {
     padding: 1em;
     background-color: white;
-
-    border: 3px rgb(137, 180, 255) groove;
 }
 .genreSongContainer {
     display: flex;
@@ -47,10 +60,6 @@
 }
 .leftColumn {
     margin: 1em;
-
-    background-color: rgb(90, 200, 149);
-
-    border: 5px groove lightgray;
 }
 .name {
     padding: 0.4em;
@@ -58,27 +67,37 @@
 
     font-size: 5em;
     text-align: center;
-    background-color: rgb(255, 153, 128);
+    background-color: #FA9314;
     color: white;
     text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 
-    border-bottom: 2px solid black;
     animation: fade-in 1s ease-in;
 }
 .picture {
     width: 100%;
+    border-bottom: #FA9314 4px solid;
+    box-shadow: 5px 5px 10px;
+}
+.pictureContainer {
+    margin: 2%;
 }
 .main {
     display: flex;
-
+    align-items: center;
+    background-color: white;
     animation: fade-in 2s ease-in;
+}
+.myMusic {
+    width: 100%;
+    text-align: center;
+
+    font-size: 280%;
+    font-weight: 800;
+    color: white;
 }
 .rightColumn {
     margin: 1em;
 
-    background-color: rgb(250, 235, 214);
-    
-    border: 5px groove lightgray;
 }
 .socialIcon {
     display: inline-block;
@@ -91,24 +110,25 @@
     display: flex;
     justify-content: space-around;
 }
-.songContainer {
+.songSection {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 1em;
-
-    background-color: white;
-
-    border: 3px rgb(137, 180, 255) groove;
-    border-radius: 1em;
+    flex-direction: column;
+    width: 100%;
+    padding: 1%;
+    background-color: rgb(27, 27, 27);
 }
-.songTitle {
-    margin: 0.4em;
-    max-width: 100%;
-    
-    font-size: 1.8em;
+.table {
+    width: 90%;
+    text-align: center;
 }
-
+.tableHeaders {
+    background-color: #FA9314;
+    font-size: 180%;
+}
+th {
+    margin: %;
+}
 @keyframes fade-in {
     from {
         opacity: 0;

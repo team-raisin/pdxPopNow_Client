@@ -1,45 +1,44 @@
 import React from 'react';
 import styles from './ArtistDetail.css';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 export default function ArtistDetail({ artist }) {
-  console.log('artistId', artist.soundcloudId);
+  console.log(artist);
   const link = `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/${artist.soundcloudId}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`;
   return (
       <>
-        <button className={styles.backButton}>←</button>
+        <Link className={styles.backButton} to='/'>←</Link>
         <h3 className={styles.name}>{artist.artistName}</h3>
         <main className={styles.main}>
-          <div className={styles.leftColumn}>
+          <div className={styles.pictureContainer}>
             <img className={styles.picture} src={artist.img}/>
-            <span className={styles.socialLinks}>
-              <a href={artist.facebook}>
-                <img className={styles.socialIcon} src='https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Flearningfromdocumenta.org%2Fwp-content%2Fuploads%2F2016%2F05%2Ffacebook_logo_300x300px_grayscale.png&f=1'/>
-              </a>
-              <a href={artist.twitter}>
-                <img className={styles.socialIcon} src='https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iconsdb.com%2Ficons%2Fpreview%2Fgray%2Ftwitter-xxl.png&f=1'/>
-              </a>
-            </span> 
           </div>
           <div className={styles.rightColumn}>
-            <span>
-              <p className={styles.description}>{artist.description}</p>
-            </span>
-            <div className={styles.genreSongContainer}>
-              <div className={styles.genresContainer}>
-                <h4 className={styles.genreTitle}>Genre</h4>
-                <ul>
-                  <div className={styles.genres}>
-                    <li>{artist.genre[0]}</li>
-                  </div>
-                </ul>
-              </div>
-              <div className={styles.songContainer}>
-                <iframe width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay" src={link}></iframe>
-              </div>
-            </div>
+            <p className={styles.description}>{artist.description}</p>
           </div>
         </main>
+        <div className={styles.songSection}>
+          <h2 className={styles.myMusic}>My Music</h2>
+          <iframe width="50%" height="600" scrolling="no" frameBorder="no" allow="autoplay" src={link}></iframe>
+        </div>
+        <div className={styles.contactSection}>
+          <h2 className={styles.contactMe}>Contact Me</h2>
+          <table className={styles.table}>
+            <tr className={styles.tableHeaders}>
+              <th>Facebook</th>
+              <th>Twitter</th>
+              <th>Instagram</th>
+              <th>Email</th>
+            </tr>
+            <tr>
+              <td>{artist.facebook}</td>
+              <td>{artist.twitter}</td>
+              <td>{artist.instagram}</td>
+              <td>{artist.email}</td>
+            </tr>
+          </table>
+        </div>
       </>
   );
 }
@@ -47,4 +46,3 @@ export default function ArtistDetail({ artist }) {
 ArtistDetail.propTypes = {
   artist: PropTypes.object.isRequired
 };
-
