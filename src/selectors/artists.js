@@ -3,13 +3,13 @@ export const getArtists = state => {
 };
 
 export const getSearchArtist = state => {
-  return state.artists.artistSearch;
+  return state.artists.artistSearch.toLowerCase();
 };
 
 export const getFilteredArtists = state => {
   const searchTerm = getSearchArtist(state);
   return getArtists(state).filter(artist => {
-    return artist.genre.includes(searchTerm) || artist.artistName.includes(searchTerm);
+    return artist.genre.includes(searchTerm) || artist.artistName.toLowerCase().includes(searchTerm);
   });
 };
 
