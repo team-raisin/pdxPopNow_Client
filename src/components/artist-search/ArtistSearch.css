@@ -1,16 +1,29 @@
 .search {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
-    align-items: center;
     padding: 2em;
+    justify-items: center;
+}
   
-    .searchInput {
-      width: 300px;
+.searchInput {
+      width: 50%;
       padding: 1em;
-      margin: 1em;;
-    }
+      margin: 1em;     
+  }
+.searchInput:focus, .search select:hover{
+  outline: none ;
+  border:1px solid #ee752b;
+  box-shadow: 0 0 5px #ee752b;
+}
   
-    button {
+.searchInput:hover, .search select:hover {
+  outline: none ;
+  border:1px solid #ee752b;
+  box-shadow: 0 0 5px #ee752b;
+}
+  
+button {
       width: 200px;
       padding: 1em;
       cursor: pointer;
@@ -18,5 +31,20 @@
       background-color: grey;
       transition: all .5s ease;
       }
-    }
 }
+
+
+
+.search select {
+
+  height: 29px;
+  overflow: hidden;
+  width: 240px;
+}
+
+
+
+
+
+
+
