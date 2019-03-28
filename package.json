@@ -24,6 +24,7 @@
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
     "auth0-js": "^9.10.1",
+    "cloudinary-core": "^2.6.2",
     "copy-webpack-plugin": "^5.0.2",
     "dotenv": "^7.0.0",
     "normalize.css": "^8.0.1",
