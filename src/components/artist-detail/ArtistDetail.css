@@ -12,6 +12,11 @@
         box-shadow: 0 0 20px white;
     }
 }
+.bandcamp {
+    width: 4em;
+    height: 4em;
+    color: rgb(98, 154, 169); 
+}
 .description {
     margin: 0;
     height: 100%;
@@ -112,16 +117,43 @@
 .socialMediaContainer {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    padding: 1%;
 }
 .songSection {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 3%;
     width: 100%;
-    padding: 1%;
     background-color: rgb(27, 27, 27);
+}
+.soundcloud {
+    width: 4em;
+    height: 4em;
+    color: rgb(253, 132, 0);
+}
+.twitter {
+    width: 4em;
+    height: 4em;
+    color: rgb(0, 172, 238);
+}
+.vimeo {
+    width: 4em;
+    height: 4em;
+    color: rgb(26, 183, 234);  
+}
+.website {
+    width: 4em;
+    height: 4em;
+    color: rgb(27, 27, 27);   
+}
+.youtube {
+    width: 4em;
+    height: 4em;
+    color: rgb(221, 35, 32); 
 }
 @keyframes fade-in {
     from {

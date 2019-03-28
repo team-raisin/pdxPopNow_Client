@@ -4,7 +4,13 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { 
   FaFacebook,
-  FaInstagram
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  FaSoundcloud,
+  FaVimeo,
+  FaBandcamp,
+  FaDesktop
 } from 'react-icons/fa';
 
 
@@ -25,13 +31,18 @@ export default function ArtistDetail({ artist }) {
         </main>
         <div className={styles.songSection}>
           <h2 className={styles.myMusic}>My Music</h2>
-          <iframe width="50%" height="600" scrolling="no" frameBorder="no" allow="autoplay" src={link}></iframe>
+          {artist.soundcloudId && <iframe width="50%" height="600" scrolling="no" frameBorder="no" allow="autoplay" src={link}></iframe>}
         </div>
-        <div className={styles.socailSection}>
-          <h2 className={styles.socialMediaTitle}>Social Media</h2>
+        <div className={styles.socialSection}>
           <div className={styles.socialMediaContainer}>
             {artist.facebook && <a href={artist.facebook}><FaFacebook className={styles.facebook}/></a>}
             {artist.instagram && <a href={artist.instagram}><FaInstagram className={styles.instagram}/></a>}
+            {artist.twitter && <a href={artist.twitter}><FaTwitter className={styles.twitter}/></a>}
+            {artist.youtube && <a href={artist.youtube}><FaYoutube className={styles.youtube}/></a>}
+            {artist.soundcloud && <a href={artist.soundcloud}><FaSoundcloud className={styles.soundcloud}/></a>}
+            {artist.vimeo && <a href={artist.vimeo}><FaVimeo className={styles.vimeo}/></a>}
+            {artist.bandcamp && <a href={artist.bandcamp}><FaBandcamp className={styles.bandcamp}/></a>}
+            {artist.website && <a href={artist.website}><FaDesktop className={styles.website}/></a>}
           </div>
         </div>
       </>
