@@ -1,119 +1,220 @@
+.all {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
 .backButton {
     position: absolute;
-    left: 1em;
-    top: 1.3em;
-
-    font-size: 2em;
-    color: black;
-
-    border-radius: 2em;
-    border: 2px black solid;
-    animation: fade-in 2s ease-in;
-    animation-delay: 1s;
-
+    left: 5%;
+    top: 5%;
+    font-size: 400%;
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+    transition: 0.2s linear;
     &:hover {
         cursor: pointer;
-        box-shadow: 0 0 20px rgb(137, 180, 255);
+        color: white;
+    }
+}
+.bandcamp {
+    width: 4em;
+    height: 4em;
+    color: rgb(98, 154, 169);
+    transition: 0.1s ease-in;
+    &:hover {
+        transform: translateY(-1em);
+        filter: drop-shadow(0 0 1em rgb(98, 154, 169));
     }
 }
 .description {
-    padding: 2em;
     margin: 0;
-
+    height: 100%;
+    width: 100%;
+    line-height: 160%;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 170%;
 }
 .description::first-letter {
     font-size: 200%;
+    color: #FA9314;
+    text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
-.genres {
-    font-size: 1.2em;
+.facebook {
+    color: rgb(55, 101, 163);
+    width: 4em;
+    height: 4em;
+    transition: 0.1s ease-in;
+    &:hover {
+        transform: translateY(-1em);
+        filter: drop-shadow(0 0 1em rgb(55, 101, 163));
+    }
 }
-.genresContainer {
-    padding: 1em;
-    background-color: white;
-
-    border: 3px rgb(137, 180, 255) groove;
-}
-.genreSongContainer {
-    display: flex;
-    justify-content: space-around;
-}
-.genreTitle {
-    margin: 0.4em;
-    
-    font-size: 1.8em;
-    text-align: center;
+.instagram {
+    width: 4em;
+    height: 4em;
+    color: rgb(214, 42, 118);
+    transition: 0.1s ease-in;
+    &:hover {
+        transform: translateY(-1em);
+        filter: drop-shadow(0 0 1em rgb(214, 42, 118));
+    }
 }
 .leftColumn {
     margin: 1em;
-
-    background-color: rgb(90, 200, 149);
-
-    border: 5px groove lightgray;
+    width: 50%;
 }
 .name {
     padding: 0.4em;
     margin: 0;
-
     font-size: 5em;
     text-align: center;
-    background-color: rgb(255, 153, 128);
+    background-color: #FA9314;
     color: white;
     text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 
-    border-bottom: 2px solid black;
-    animation: fade-in 1s ease-in;
 }
 .picture {
     width: 100%;
+    border-bottom: #FA9314 4px solid;
+    box-shadow: 5px 5px 10px;
+}
+.pictureContainer {
+    margin: 2%;
+    width: 40%;
 }
 .main {
     display: flex;
-
-    animation: fade-in 2s ease-in;
+    align-items: center;
+    background-color: white;
 }
 .rightColumn {
     margin: 1em;
-
-    background-color: rgb(250, 235, 214);
-    
-    border: 5px groove lightgray;
+    width: 50%;
 }
-.socialIcon {
-    display: inline-block;
-    max-width:57px;
-    max-height:30px;
-    width: auto;
-    height: auto;
-}
-.socialLinks {
+.socialSection {
     display: flex;
-    justify-content: space-around;
-}
-.songContainer {
-    display: flex;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
-    padding: 1em;
-
+    width: 100%;
     background-color: white;
-
-    border: 3px rgb(137, 180, 255) groove;
-    border-radius: 1em;
+    padding: 2%;
 }
-.songTitle {
-    margin: 0.4em;
-    max-width: 100%;
-    
-    font-size: 1.8em;
+.socialMediaTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 280%;
+    font-weight: 800;
 }
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
+.socialMediaContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+}
+.songSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3%;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+}
+.soundcloud {
+    width: 4em;
+    height: 4em;
+    color: rgb(253, 132, 0);
+    transition: 0.1s ease-in;
+    &:hover {
+        transform: translateY(-1em);
+        filter: drop-shadow(0 0 1em rgb(253, 132, 0));
     }
-    to {
-        opacity: 1;
+}
+.soundcloudContainer {
+    width: 60%;
+    margin: auto;
+}
+.twitter {
+    width: 4em;
+    height: 4em;
+    color: rgb(0, 172, 238);
+    transition: 0.1s ease-in;
+    &:hover {
+        transform: translateY(-1em);
+        filter: drop-shadow(0 0 1em rgb(0, 172, 238));
+    }
+}
+.vimeo {
+    width: 4em;
+    height: 4em;
+    color: rgb(26, 183, 234); 
+    transition: 0.1s ease-in;
+    &:hover {
+        transform: translateY(-1em);
+        filter: drop-shadow(0 0 1em rgb(26, 183, 234));
+    } 
+}
+.website {
+    width: 4em;
+    height: 4em;
+    color: rgb(27, 27, 27);
+    transition: 0.1s ease-in;
+    &:hover {
+        transform: translateY(-1em);
+    }   
+}
+.youtube {
+    width: 4em;
+    height: 4em;
+    color: rgb(221, 35, 32);
+    transition: 0.1s ease-in;
+    &:hover {
+        transform: translateY(-1em);
+        filter: drop-shadow(0 0 1em rgb(221, 35, 32));
+    }
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media screen and (max-width: 1000px) {
+    .iframe {
+        width: 50%;
+        height: 600;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .pictureContainer {
+        width: 70%;
     }
 }
