@@ -4,7 +4,7 @@ import React from 'react';
 // import AllArtists from '../../containers/AllArtists';
 // import { login } from '../../services/auth';
 // import Callback from '../../containers/auth/Callback';
-import CreateArtist from '../../containers/CreateArtist';
+// import CreateArtist from '../../containers/CreateArtist';
 // import ArtistForm from '../form/ArtistForm';
 import AllArtists from '../../containers/AllArtists';
 
