@@ -19,7 +19,14 @@ h1 {
     align-items: center;
     padding: 1em;
   }
+  .link {
+    text-decoration: none;
+    color: black;
 
+    &:visited {
+      color: purple;
+    }
+  }
   img {
     width: 300px;
     height: 300px;

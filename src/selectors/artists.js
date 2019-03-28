@@ -17,4 +17,3 @@ export const getFilteredArtists = state => {
 export const getEmail = state => {
   return state.artists.email;
 };
-

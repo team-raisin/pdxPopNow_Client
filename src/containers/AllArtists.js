@@ -30,9 +30,6 @@ class AllArtists extends PureComponent {
   componentDidMount() {
     this.props.fetch();
   }
-
-
-
   render() {
     const { artists } = this.props;
     console.log(artists, 'allartists');
