@@ -7,7 +7,6 @@ export default class ArtistSearch extends PureComponent {
     search: ''
   }
   static propTypes = {
-    // handleSearch: PropTypes.func.isRequired,
     artistSearch: PropTypes.func
   }
 
@@ -56,8 +55,7 @@ export default class ArtistSearch extends PureComponent {
           <option name='genre' value="Techno">Techno</option>
           <option name='genre' value="World">World</option>
         </select>
-        <input className={styles.searchInput} onChange={this.handleChange} type="text" name="search" placeholder="Search artist, band, genre" />
-        <button>Search</button>
+        <input className={styles.searchInput} onChange={this.handleChange} type="text" name="search" placeholder="Search an artist or band" />
       </form>
     );
   }
