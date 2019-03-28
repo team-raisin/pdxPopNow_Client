@@ -8,9 +8,8 @@ import { Link } from 'react-router-dom';
 function ArtistList(props){
   const { artists } = props;
   const artistList = artists.map((artist, i) => { 
-    return <Link className={styles.link} to={`/artist/${artist._id}`} key={i}><li>
+    return <Link className={styles.link} to={`/${artist._id}`} key={i}><li>
       <img alt={`profile image for ${artist.name}`} src={getImageUrl(artist.img, ['w_700'])} />
-      {/* <img src={artist.img}/> */}
       { artist.artistName }
     </li>
     </Link>;
