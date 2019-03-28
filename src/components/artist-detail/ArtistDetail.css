@@ -12,20 +12,6 @@
         box-shadow: 0 0 20px white;
     }
 }
-.contactSection {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 100%;
-    background-color: white;
-    padding: 1%;
-}
-.contactMe {
-    width: 100%;
-    text-align: center;
-    font-size: 280%;
-    font-weight: 800;
-}
 .description {
     margin: 0;
     height: 100%;
@@ -39,6 +25,11 @@
     font-size: 200%;
     color: #FA9314;
     text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.facebook {
+    color: rgb(55, 101, 163);
+    width: 4em;
+    height: 4em;
 }
 .genres {
     font-size: 1.2em;
@@ -57,6 +48,11 @@
     
     font-size: 1.8em;
     text-align: center;
+}
+.instagram {
+    width: 4em;
+    height: 4em;
+    color: rgb(214, 42, 118);
 }
 .leftColumn {
     margin: 1em;
@@ -99,15 +95,24 @@
     margin: 1em;
 
 }
-.socialIcon {
-    display: inline-block;
-    max-width:57px;
-    max-height:30px;
-    width: auto;
-    height: auto;
-}
-.socialLinks {
+.socialSection {
     display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 2%;
+}
+.socialMediaTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 280%;
+    font-weight: 800;
+}
+.socialMediaContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 .songSection {
@@ -117,17 +122,6 @@
     width: 100%;
     padding: 1%;
     background-color: rgb(27, 27, 27);
-}
-.table {
-    width: 90%;
-    text-align: center;
-}
-.tableHeaders {
-    background-color: #FA9314;
-    font-size: 180%;
-}
-th {
-    margin: %;
 }
 @keyframes fade-in {
     from {

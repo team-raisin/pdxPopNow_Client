@@ -2,6 +2,11 @@ import React from 'react';
 import styles from './ArtistDetail.css';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { 
+  FaFacebook,
+  FaInstagram
+} from 'react-icons/fa';
+
 
 export default function ArtistDetail({ artist }) {
   console.log(artist);
@@ -22,22 +27,12 @@ export default function ArtistDetail({ artist }) {
           <h2 className={styles.myMusic}>My Music</h2>
           <iframe width="50%" height="600" scrolling="no" frameBorder="no" allow="autoplay" src={link}></iframe>
         </div>
-        <div className={styles.contactSection}>
-          <h2 className={styles.contactMe}>Contact Me</h2>
-          <table className={styles.table}>
-            <tr className={styles.tableHeaders}>
-              <th>Facebook</th>
-              <th>Twitter</th>
-              <th>Instagram</th>
-              <th>Email</th>
-            </tr>
-            <tr>
-              <td>{artist.facebook}</td>
-              <td>{artist.twitter}</td>
-              <td>{artist.instagram}</td>
-              <td>{artist.email}</td>
-            </tr>
-          </table>
+        <div className={styles.socailSection}>
+          <h2 className={styles.socialMediaTitle}>Social Media</h2>
+          <div className={styles.socialMediaContainer}>
+            {artist.facebook && <a href={artist.facebook}><FaFacebook className={styles.facebook}/></a>}
+            {artist.instagram && <a href={artist.instagram}><FaInstagram className={styles.instagram}/></a>}
+          </div>
         </div>
       </>
   );
