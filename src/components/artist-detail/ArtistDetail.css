@@ -1,15 +1,21 @@
+.all {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
 .backButton {
     position: absolute;
     left: 5%;
-    top: 4.5%;
-
+    top: 5%;
     font-size: 400%;
     color: rgb(27, 27, 27);
-
     text-decoration: none;
+    transition: 0.2s linear;
     &:hover {
         cursor: pointer;
-        box-shadow: 0 0 20px white;
+        color: white;
     }
 }
 .bandcamp {
@@ -26,7 +32,6 @@
     margin: 0;
     height: 100%;
     width: 100%;
-
     line-height: 160%;
     font-weight: 400;
     font-size: 170%;
@@ -46,24 +51,6 @@
         filter: drop-shadow(0 0 1em rgb(55, 101, 163));
     }
 }
-.genres {
-    font-size: 1.2em;
-    text-align: center;
-}
-.genresContainer {
-    padding: 1em;
-    background-color: white;
-}
-.genreSongContainer {
-    display: flex;
-    justify-content: space-around;
-}
-.genreTitle {
-    margin: 0.4em;
-    
-    font-size: 1.8em;
-    text-align: center;
-}
 .instagram {
     width: 4em;
     height: 4em;
@@ -80,14 +67,12 @@
 .name {
     padding: 0.4em;
     margin: 0;
-
     font-size: 5em;
     text-align: center;
     background-color: #FA9314;
     color: white;
     text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 
-    animation: fade-in 1s ease-in;
 }
 .picture {
     width: 100%;
@@ -101,11 +86,9 @@
     display: flex;
     align-items: center;
     background-color: white;
-    animation: fade-in 2s ease-in;
 }
 .rightColumn {
     margin: 1em;
-
 }
 .socialSection {
     display: flex;
@@ -186,11 +169,31 @@
         filter: drop-shadow(0 0 1em rgb(221, 35, 32));
     }
 }
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
