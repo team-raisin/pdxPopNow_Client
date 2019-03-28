@@ -14,9 +14,9 @@ export const ROUTES = {
   },
 
   Artist: {
-    path: '/artists',
+    path: '/',
     Component: AllArtists,
-    linkTo: () => '/artists'
+    linkTo: () => '/'
   },
   CALLBACK: {
     path: '/callback',
