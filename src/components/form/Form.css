@@ -1,32 +1,32 @@
-body{
+.body{
   background-image: url("../../assets/microphone-2130806_1920.jpg");
 
 }
-section{
+.section{
   width: 50%;
   margin: auto;
   border: 1px solid rgba(210,174,126,0.5);
   padding: 2%;
 
 }
-h2{
+.h2{
   color: white;
   text-transform: uppercase;
   text-align: center;
   
 }
-form{
+.form{
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: .7em;
 }
 
-form > * {
+.form > * {
   height: 2em;
 }
 
-textarea{
+.textarea{
 
   height: 9em;
   margin-top: .7em;
