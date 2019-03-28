@@ -67,4 +67,8 @@ export const updateArtist = artistName => ({
   payload: artistName
 });
 
-
+export const CLEAR_ARTIST = 'CLEAR_ARTIST';
+export const clearArtist = () => ({
+  type: CLEAR_ARTIST,
+  payload: null
+});
