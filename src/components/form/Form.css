@@ -1,36 +1,29 @@
-.body{
+
+.profile {
   background-image: url("../../assets/microphone-2130806_1920.jpg");
-
+  height: 100vh;
 }
-.section{
-  width: 50%;
-  margin: auto;
-  border: 1px solid rgba(210,174,126,0.5);
-  padding: 2%;
 
-}
-.h2{
+h2 {
   color: white;
-  text-transform: uppercase;
   text-align: center;
-  
+  padding: 2em;
 }
-.form{
 
+.input {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: .7em;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2em;
 }
 
-.form > * {
-  height: 2em;
+.select {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
 }
 
-.textarea{
-
-  height: 9em;
-  margin-top: .7em;
+.description {
+  width: 300px;
+  height: 200px;
 }
-
-
 
