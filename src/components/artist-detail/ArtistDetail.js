@@ -3,7 +3,8 @@ import styles from './ArtistDetail.css';
 import PropTypes from 'prop-types';
 
 export default function ArtistDetail({ artist }) {
-  
+  console.log('artistId', artist.soundcloudId);
+  const link = `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/${artist.soundcloudId}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`;
   return (
       <>
         <button className={styles.backButton}>←</button>
@@ -34,7 +35,7 @@ export default function ArtistDetail({ artist }) {
                 </ul>
               </div>
               <div className={styles.songContainer}>
-                <iframe width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/183246622&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <iframe width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay" src={link}></iframe>
               </div>
             </div>
           </div>
@@ -46,3 +47,4 @@ export default function ArtistDetail({ artist }) {
 ArtistDetail.propTypes = {
   artist: PropTypes.object.isRequired
 };
+

@@ -19,7 +19,6 @@ function ArtistList(props){
 
 
 ArtistList.propTypes = {
-  artists: PropTypes.array.isRequired,
-  handleClick: PropTypes.func.isRequired
+  artists: PropTypes.array.isRequired
 };
 export default ArtistList;
