@@ -14,7 +14,7 @@ export default class ArtistSearch extends PureComponent {
     const { artistSearch } = this.props;
     this.setState({ [event.target.name]: event.target.value }, () => {
       const { search } = this.state;
-      artistSearch(search);
+      artistSearch(search.toLowerCase());
     });
   }
 

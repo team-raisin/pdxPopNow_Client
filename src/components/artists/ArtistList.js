@@ -23,7 +23,6 @@ function ArtistList(props){
   );
 }
 
-
 ArtistList.propTypes = {
   artists: PropTypes.array.isRequired
 };
