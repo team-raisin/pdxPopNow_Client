@@ -54,7 +54,6 @@ export const artistSearch = search => ({
   payload: search
 });
 
-
 //we might be able to delet these two
 export const UPDATE_EMAIL = 'UPDATE_EMAIL';
 export const updateEmail = email => ({
