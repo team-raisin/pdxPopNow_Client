@@ -133,6 +133,10 @@
         filter: drop-shadow(0 0 1em rgb(253, 132, 0));
     }
 }
+.soundcloudContainer {
+    width: 60%;
+    margin: auto;
+}
 .twitter {
     width: 4em;
     height: 4em;

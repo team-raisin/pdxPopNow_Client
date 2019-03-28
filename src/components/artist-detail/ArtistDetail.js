@@ -31,7 +31,9 @@ export default function ArtistDetail({ artist }) {
         </div>
       </main>
       <div className={styles.songSection}>
-        {artist.soundcloudId && <iframe width="50%" height="600" scrolling="no" frameBorder="no" allow="autoplay" src={link}></iframe>}
+        <div className={styles.soundcloudContainer}>
+          {artist.soundcloudId && <iframe width="100%" height="600" scrolling="no" frameBorder="no" allow="autoplay" src={link}></iframe>}
+        </div>
       </div>
       <div className={styles.socialSection}>
         <div className={styles.socialMediaContainer}>
