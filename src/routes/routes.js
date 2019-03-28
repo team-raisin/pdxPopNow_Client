@@ -18,7 +18,6 @@ export const ROUTES = {
     Component: AllArtists,
     linkTo: () => '/artists'
   },
-  
   CALLBACK: {
     path: '/callback',
     Component: Callback,
