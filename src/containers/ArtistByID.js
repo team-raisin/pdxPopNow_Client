@@ -33,7 +33,6 @@ class ArtistById extends PureComponent {
   }
   render() {
     const { artist } = this.props;
-    console.log(artist);
     if(!artist) return null;
     return (
       <ArtistDetail artist={artist} />
