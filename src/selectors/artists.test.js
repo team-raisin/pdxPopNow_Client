@@ -1,4 +1,4 @@
-import { getArtists, getSearchArtist } from './artists';
+import { getArtists, getSearchArtist, getFilteredArtists } from './artists';
 
 describe('artists selectors', () => {
   it('selects all artists', () => {
@@ -19,5 +19,17 @@ describe('artists selectors', () => {
     };
     const searchedArtists = getSearchArtist(state);
     expect(searchedArtists).toEqual('');
+  });
+
+  it('filters artist search', () => {
+    const state = {
+      artists: {
+        artists: [],
+        artistSearch: ''
+      }
+    };
+    
+    const filteredArtist = getFilteredArtists(state);
+    expect(filteredArtist).toEqual([]);
   });
 });
