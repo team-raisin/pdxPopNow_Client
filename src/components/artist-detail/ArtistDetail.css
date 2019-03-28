@@ -63,6 +63,7 @@
 }
 .leftColumn {
     margin: 1em;
+    width: 50%;
 }
 .name {
     padding: 0.4em;
@@ -81,6 +82,7 @@
 }
 .pictureContainer {
     margin: 2%;
+    width: 40%;
 }
 .main {
     display: flex;
@@ -89,6 +91,7 @@
 }
 .rightColumn {
     margin: 1em;
+    width: 50%;
 }
 .socialSection {
     display: flex;

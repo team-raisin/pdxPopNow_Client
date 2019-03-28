@@ -39,7 +39,7 @@ export default function ArtistDetail({ artist }) {
           {artist.instagram && <a href={artist.instagram}><FaInstagram className={styles.instagram}/></a>}
           {artist.twitter && <a href={artist.twitter}><FaTwitter className={styles.twitter}/></a>}
           {artist.youtube && <a href={artist.youtube}><FaYoutube className={styles.youtube}/></a>}
-          {artist.soundcloud && <a href={artist.soundcloud}><FaSoundcloud className={styles.soundcloud}/></a>}
+          {artist.soundcloudId && <a href={artist.soundcloud}><FaSoundcloud className={styles.soundcloud}/></a>}
           {artist.vimeo && <a href={artist.vimeo}><FaVimeo className={styles.vimeo}/></a>}
           {artist.bandcamp && <a href={artist.bandcamp}><FaBandcamp className={styles.bandcamp}/></a>}
           {artist.website && <a href={artist.website}><FaDesktop className={styles.website}/></a>}
