@@ -37,7 +37,7 @@ export default function ArtistDetail({ artist }) {
       </div>
       <main className={styles.main}>
         <div className={styles.pictureContainer}>
-          <img className={styles.picture} src={artist.img}/>
+          <img className={styles.picture} src={artist.img} alt="artist-photo"/>
         </div>
         <div className={styles.rightColumn}>
           <p className={styles.description}>{artist.description}</p>
