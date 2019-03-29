@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './ArtistDetail.css';
+import Nav from '../header/Nav';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { 
@@ -20,6 +21,7 @@ export default function ArtistDetail({ artist }) {
   const link = `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/${artist.soundcloudId}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`;
   return (
     <div className={styles.all}>
+      <Nav/>
       <Link to='/'><FaArrowCircleLeft className={styles.backButton}/></Link>
       <h3 className={styles.name}>{artist.artistName}</h3>
       
