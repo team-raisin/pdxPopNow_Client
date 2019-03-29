@@ -73,8 +73,8 @@ class ArtistForm extends PureComponent {
     return (
       <>
       <section className={styles.container}>
-        <h2 className={styles.h2}>Create Artist Profile</h2>
         <form className={styles.form}onSubmit={this.handleSubmit}>
+          <h2 className={styles.h2}>Create Artist Profile</h2>
           <input className={styles.input}type='text' name='artistName' onChange={this.handleChange} placeholder='Artist Name/Band Name' />
           <input className={styles.input}type='text' name='contact' onChange={this.handleChange} placeholder='Contact'  />
           <input className={styles.input}type='text' name='email' onChange={this.handleChange} placeholder='Email' />
@@ -116,6 +116,7 @@ class ArtistForm extends PureComponent {
           </select>
           <br></br>
           <textarea className={styles.textarea}name="description" placeholder="Please include a short bio" onChange={this.handleChange}></textarea>
+          <br></br>
           <br></br>
           <button className={styles.button}>Submit</button> 
         </form>

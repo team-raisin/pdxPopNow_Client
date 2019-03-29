@@ -11,7 +11,7 @@
     left: 5%;
     top: 5%;
     font-size: 400%;
-    color: rgb(27, 27, 27);
+    color: rgb(32, 226, 113);
     text-decoration: none;
     transition: 0.2s linear;
     &:hover {
@@ -72,9 +72,8 @@
     font-size: 5em;
     text-align: center;
     background-color: #FA9314;
-    color: white;
-    text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-
+    color: black;
+   
 }
 .picture {
     width: 100%;
