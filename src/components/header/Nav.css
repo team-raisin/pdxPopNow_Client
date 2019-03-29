@@ -1,0 +1,14 @@
+.headerNav{
+  justify-self: end;
+  margin-right: 8%;
+}
+
+
+.linkers{
+  text-decoration: none;
+}
+
+
+.headerNav li:hover{
+  color: black;
+}
