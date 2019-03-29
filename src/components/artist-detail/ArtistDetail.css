@@ -151,7 +151,7 @@
 .vimeo {
     width: 4em;
     height: 4em;
-    color: rgb(26, 183, 234); 
+    color: rgb(32, 226, 113); 
     transition: 0.1s ease-in;
     &:hover {
         transform: translateY(-1em);
