@@ -1,8 +1,43 @@
 .header {
-  color: black;
+
+  background-image: url("../../assets/abstract-music-rock-bw.jpg");
+  background-position: center;
+  background-size: cover;
   padding: 0;
   margin: 0;
+  height: 300px;
+  background-color: black;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
 }
+
+.header h2 {
+  color: #f67f2e;
+  margin-top: 0;
+  padding: 2%;
+  font-size: 6em;
+}
+
+.header aside{
+  width: auto;
+  justify-self: end;
+  margin-right: 2%;
+}
+
+.header ul {
+  color: #f67f2e;
+  font-size: 1.2em;
+}
+
+.header nav li {
+  list-style: none;
+  margin-right: 7%;
+  color: white;
+  display: inline;
+}
+
+
 
 .background {
   z-index: -1;
