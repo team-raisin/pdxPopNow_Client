@@ -75,7 +75,7 @@ class ArtistForm extends PureComponent {
       <section className={styles.container}>
         <form className={styles.form}onSubmit={this.handleSubmit}>
           <h2 className={styles.h2}>Create Artist Profile</h2>
-          <input className={styles.input}type='text' name='artistName' onChange={this.handleChange} placeholder='Artist Name/Band Name' />
+          <input className={styles.input}type='text' name='artistName' onChange={this.handleChange} placeholder='Artist Name/Band Name' autoFocus/>
           <input className={styles.input}type='text' name='contact' onChange={this.handleChange} placeholder='Contact'  />
           <input className={styles.input}type='text' name='email' onChange={this.handleChange} placeholder='Email' />
           <input className={styles.input}type='text' name='img' onChange={this.handleChange} placeholder='Photo URL' />
