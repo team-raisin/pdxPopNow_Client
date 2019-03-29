@@ -15,3 +15,4 @@ const request = (path, method, body) => {
 
 export const get = path => request(path, 'GET');
 export const post = (path, body) => request(path, 'POST', body);
+export const put = (path, body) => request(path, 'PUT', body);
