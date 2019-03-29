@@ -39,7 +39,7 @@
   }
  .input:focus {
    background-color: #ffffff;
-   border-radius: 5px;
+   border-radius: 2px;
    outline:none;
  }
  .textarea {

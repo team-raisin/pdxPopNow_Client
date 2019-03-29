@@ -12,6 +12,11 @@
       padding: 1em;
       margin: 1em;;
     }
+    .searchInput:focus {
+      background-color: #ffffff;
+      border-radius: 2px;
+      outline:none;
+    }
   
     button {
       width: 200px;
