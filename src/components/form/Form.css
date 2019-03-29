@@ -1,36 +1,52 @@
-.body{
-  background-image: url("../../assets/microphone-2130806_1920.jpg");
+
+.container {
+  width:100vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../assets/form_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
 
 }
-.section{
-  width: 50%;
+.h2 {
   margin: auto;
-  border: 1px solid rgba(210,174,126,0.5);
-  padding: 2%;
+  font-family: montserrat !important;
+  color:white;
+}
+.form {
+  height: 80vh;
+  margin: auto;
+}
+.input {
+  justify-content: center;
+  border: none !important;
+  border-bottom: 1px solid !important;
+  font-family: montserrat !important;
+  display: block;
+  padding: 10px;
+  width:250px;
+  background-color: rgba(0,0,0,0) !important;
+  color: black;
+  font-size: 15px;
+  text-align: left;
+  margin-bottom: 5px !important;
+ }
+ .input:focus {
+   background-color: #f7ffe0;
+   border-radius: 5px;
+   outline:none;
+ }
+ .textarea {
+  font-family: montserrat !important;
+  min-width: 275px;
+  max-width: 275px;
+ }
+.button {
+  font-family: montserrat !important;
 
 }
-.h2{
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  
-}
-.form{
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: .7em;
-}
-
-.form > * {
-  height: 2em;
-}
-
-.textarea{
-
-  height: 9em;
-  margin-top: .7em;
-}
 
 
 
