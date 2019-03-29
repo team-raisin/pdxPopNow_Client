@@ -1,4 +1,5 @@
 export const getArtists = state => {
+  console.log(state, 'state!!');
   return state.artists.artists;
 };
 
@@ -7,9 +8,10 @@ export const getSearchArtist = state => {
 };
 
 export const getFilteredArtists = state => {
+  console.log('***', state);
   const searchTerm = getSearchArtist(state);
   return getArtists(state).filter(artist => {
-    return artist.genre.includes(searchTerm) || artist.artistName.toLowerCase().includes(searchTerm);
+    return artist.genre[0].toLowerCase() === searchTerm || artist.artistName.toLowerCase().includes(searchTerm);
   });
 };
 
