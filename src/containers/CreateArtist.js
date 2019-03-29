@@ -3,8 +3,8 @@ import ArtistForm from '../components/form/ArtistForm';
 import { createArtist } from '../actions/artists';
 
 
-const mapDispatchToProps = dispatch => ({
-  createArtist: (
+const mapDispatchToProps = (dispatch, props) => ({
+  createArtist(
     artistName, 
     contact,
     email, 
@@ -18,23 +18,28 @@ const mapDispatchToProps = dispatch => ({
     youtube,
     vimeo,
     genre,
-    description) => dispatch(createArtist({
-    artistName, 
-    contact,
-    email, 
-    img, 
-    twitter,
-    website,
-    facebook,
-    bandCamp,
-    soundcloud,
-    instagram,
-    youtube,
-    vimeo,
-    genre,
-    description
-  })) 
-
+    description) {
+    const action = createArtist({
+      artistName, 
+      contact,
+      email, 
+      img, 
+      twitter,
+      website,
+      facebook,
+      bandCamp,
+      soundcloud,
+      instagram,
+      youtube,
+      vimeo,
+      genre,
+      description
+    });
+    dispatch(action);
+    action.payload.then(() => {
+      props.history.push('/');
+    });
+  } 
 });
 
 export default connect(

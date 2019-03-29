@@ -1,6 +1,8 @@
 
 .container {
+  margin:0;
   width:100vw;
+  height:100vh;
   display: flex;
   flex-direction: column;
   background-image: url("../../assets/form_background.jpg");
@@ -9,13 +11,20 @@
   opacity: 0.9;
 }
 .h2 {
+  width:60%;
   margin: auto;
   font-family: montserrat !important;
   color: #fa9314;
+  text-align:center;
+  font-size: 320%;
 }
 .form {
-  height: 80vh;
-  margin: auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+  width: 80vw;
+  margin: 0 auto 0 auto;
   padding:2%;
   background-color: rgba(255,255,255,.9);
 }
@@ -26,15 +35,15 @@
   font-family: montserrat !important;
   display: block;
   padding: 1em;
-  width:250px;
+  width:40%;
   background-color: rgba(0,0,0,0) !important;
-  color: #fa9314;
-  font-size: 15px;
+  color: black;
+  font-size: 120%;
   text-align: left;
   margin-bottom: 5px !important;
  }
  ::placeholder {
-   color:rgb(32, 226, 113);
+   color:rgb(102, 102, 102);
    text-shadow: white 3px;
   }
  .input:focus {
@@ -44,21 +53,34 @@
  }
  .textarea {
   font-family: montserrat !important;
-  margin:3%;
-  min-width: 275px;
-  max-width: 275px;
+  margin:0%;
+  min-width: 50%;
+  max-width: 50%;
  }
  .label{
    color:black;
    font-family: montserrat !important;
-   padding:10%;
+   padding:1%;
+   font-size:150%;
  }
+.select {
+  margin:1%;
+  font-size:120%;
+  font-family: montserrat !important;
+}
 .button {
+  margin:1%;
+  padding: 2%;
   font-family: montserrat !important;
   color:orange;
-  padding: 2%;
+  transition: 0.1s linear;
 }
+.button:hover { 
+  cursor: pointer;
+  box-shadow:0 0 2em orange;
+  color:black;
 
+}
 
 
 
