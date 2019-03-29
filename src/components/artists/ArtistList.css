@@ -1,12 +1,20 @@
 .artistListSection {
   font-family: 'Montserrat', sans-serif;
+  background-color: black;
 }
 
 h1 {
   text-align: center;
 }
 
+.link img{
+  border: solid #f67e2e 1px;
+}
+
 .artistList {
+  max-width: 1200px;
+  margin-bottom: 0;
+  margin-top: 0;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -19,14 +27,16 @@ h1 {
     align-items: center;
     padding: 1em;
   }
+    
   .link {
     text-decoration: none;
     color: black;
 
-    &:visited {
-      color: purple;
+    &:hover {
+      color: #fbae40;
     }
   }
+
   img {
     width: 300px;
     height: 300px;
