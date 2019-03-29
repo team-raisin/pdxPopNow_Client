@@ -9,6 +9,7 @@ export default function Nav() {
         <ul>
           <Link className={style.linkers} to='/'><li>Home</li></Link>
           <Link className={style.linkers}  to='/artistform'><li>Sign Up</li></Link>
+          <Link className={style.linkers}  to='/about-us'><li>About</li></Link>
         </ul>
       </nav>
     </>

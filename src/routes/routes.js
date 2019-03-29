@@ -5,6 +5,7 @@ import CreateArtist from '../containers/CreateArtist';
 import Callback from '../containers/auth/Callback';
 import { withSession } from '../containers/auth/withSession';
 import ArtistByID from '../containers/ArtistByID';
+import AboutUs from '../components/about/AboutUs';
 
 export const ROUTES = {
   ArtistForm: {
@@ -22,6 +23,11 @@ export const ROUTES = {
     path: '/callback',
     Component: Callback,
     linkTo: () => '/callback'
+  },
+  AboutUs: {
+    path: '/about-us',
+    Component: AboutUs,
+    linkTo: () => '/about-us'
   },
   ArtistByID: {
     path: '/:id',

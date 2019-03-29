@@ -1,0 +1,54 @@
+.about {
+  background-image: url('https://cdn.pixabay.com/photo/2017/12/18/03/15/skyscraper-3025365__480.jpg');
+  background-size: cover;
+  margin: 0;
+}
+
+.about h1 {
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+  padding: 2em;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.about img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  border-radius: 50%;
+}
+
+.team {
+  list-style-type: none;
+}
+
+.blurb {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  margin-top: 1em;
+  margin-left: 8em;
+  margin-right: 8em;
+}
+
+.githubHeader {
+  text-align: center;
+  color: white;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.github {
+  list-style-type: none;
+  text-align: center;
+  color: black;
+}
+
+.list {
+  color: orange;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  padding: 3px;
+}
