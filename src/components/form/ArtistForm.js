@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import styles from './Form.css';
 import PropTypes from 'prop-types';
+import Footer from '../footer/Footer';
 
 
 class ArtistForm extends PureComponent {
@@ -114,13 +115,11 @@ class ArtistForm extends PureComponent {
             <option name='genre' value="techno">Techno</option>
             <option name='genre' value="world">World</option>
           </select>
-          
           <textarea className={styles.textarea}name="description" placeholder="Please include a short bio" onChange={this.handleChange}></textarea>
           
           <button className={styles.button}>Submit</button> 
         </form>
       </section>
-
       </>
     );
   }

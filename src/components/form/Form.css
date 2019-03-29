@@ -73,14 +73,10 @@
   padding: 2%;
   font-family: montserrat !important;
   color:orange;
-  transition: 0.1s linear;
+  transition: 0.1s linear;  
 }
 .button:hover { 
   cursor: pointer;
   box-shadow:0 0 2em orange;
   color:black;
-
 }
-
-
-
