@@ -1,0 +1,35 @@
+.headerNav{
+  justify-self: end;
+  margin-right: 5%;
+  z-index: 10;
+}
+
+.headerNav{
+  position: absolute;
+  right: 2px;
+}
+.headerNav li {
+  display: inline;
+  color: white;
+  padding-right: 1em;
+  
+}
+.headerNav li:hover {
+  display: inline;
+  color: black;
+  
+}
+.headerNav li:nth-last-of-type(1) {
+  margin-right: 5%;
+  
+}
+
+
+.linkers{
+  text-decoration: none;
+}
+
+
+.headerNav li:hover{
+  color: back;
+}

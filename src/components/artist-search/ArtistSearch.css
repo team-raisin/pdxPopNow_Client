@@ -1,10 +1,13 @@
 .search {
   font-family: 'Montserrat', sans-serif;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
-    align-items: center;
     padding: 2em;
-  
+    justify-items: center;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(254,139,51,1) 100%);
+}
     .searchInput {
       border: none !important;
       border-bottom: 1px solid !important;
@@ -17,8 +20,15 @@
       border-radius: 2px;
       outline:none;
     }
+
   
-    button {
+.searchInput:hover, .search select:hover {
+  outline: none ;
+  border:1px solid #ee752b;
+  box-shadow: 0 0 5px #ee752b;
+}
+  
+button {
       width: 200px;
       padding: 1em;
       cursor: pointer;
@@ -26,5 +36,20 @@
       background-color: grey;
       transition: all .5s ease;
       }
-    }
 }
+
+
+
+.search select {
+
+  height: 29px;
+  overflow: hidden;
+  width: 240px;
+}
+
+
+
+
+
+
+
