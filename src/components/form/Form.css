@@ -6,8 +6,7 @@
   background-image: url("../../assets/form_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.6;
-
+  opacity: 0.9;
 }
 .h2 {
   margin: auto;
@@ -27,13 +26,14 @@
   padding: 10px;
   width:250px;
   background-color: rgba(0,0,0,0) !important;
-  color: black;
+  color: white;
   font-size: 15px;
   text-align: left;
   margin-bottom: 5px !important;
  }
+ ::placeholder {color:rgb(24, 24, 24)}
  .input:focus {
-   background-color: #f7ffe0;
+   background-color: #aee213;
    border-radius: 5px;
    outline:none;
  }
