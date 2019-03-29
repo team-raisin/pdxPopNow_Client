@@ -18,8 +18,9 @@ const mapDispatchToProps = dispatch => ({
     youtube,
     vimeo,
     genre,
-    description) => dispatch(createArtist(  
+    description) => dispatch(createArtist({
     artistName, 
+    contact,
     email, 
     img, 
     twitter,
@@ -30,9 +31,9 @@ const mapDispatchToProps = dispatch => ({
     instagram,
     youtube,
     vimeo,
-    contact,
     genre,
-    description))
+    description
+  })) 
 
 });
 

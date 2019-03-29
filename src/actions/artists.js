@@ -13,39 +13,9 @@ export const fetchArtist = id => ({
 });
 
 export const CREATE_ARTIST = 'CREATE_ARTIST';
-export const createArtist = (
-  artistName, 
-  contact,
-  email, 
-  img, 
-  website,
-  facebook,
-  twitter,
-  instagram,
-  bandCamp,
-  soundcloud,
-  youtube,
-  vimeo,
-  genre,
-  description
-) => ({
+export const createArtist = (artist) => ({
   type: CREATE_ARTIST,
-  payload: postArtist({ 
-    artistName, 
-    contact,
-    email, 
-    img, 
-    website,
-    facebook,
-    twitter,
-    instagram,
-    bandCamp,
-    soundcloud,
-    youtube,
-    vimeo,
-    genre,
-    description
-  }) 
+  payload: postArtist(artist) 
 });
 
 export const ARTIST_SEARCH = 'ARTIST_SEARCH';
