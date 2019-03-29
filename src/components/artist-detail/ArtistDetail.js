@@ -38,7 +38,7 @@ export default function ArtistDetail({ artist }) {
       <div className={styles.socialSection}>
         <div className={styles.socialMediaContainer}>
           {artist.facebook && <a href={artist.facebook}target='_blank' rel="noopener noreferrer"  ><FaFacebook className={styles.facebook}/></a>}
-          {artist.instagram && <a href={artist.instagram}><FaInstagram className={styles.instagram}/></a>}
+          {artist.instagram && <a href={artist.instagram} target='_blank' rel="noopener noreferrer"  ><FaInstagram className={styles.instagram}/></a>}
           {artist.twitter && <a href={artist.twitter}><FaTwitter className={styles.twitter}/></a>}
           {artist.youtube && <a href={artist.youtube}><FaYoutube className={styles.youtube}/></a>}
           {artist.soundcloudId && <a href={artist.soundcloud}><FaSoundcloud className={styles.soundcloud}/></a>}
