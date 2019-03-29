@@ -1,5 +1,4 @@
 .header {
-
   background-image: url("../../assets/abstract-music-rock-bw.jpg");
   background-position: center;
   background-size: cover;
@@ -13,7 +12,7 @@
 }
 
 .header h2 {
-  color: #f67f2e;
+  color: black;
   margin-top: 0;
   padding: 2%;
   font-size: 6em;
