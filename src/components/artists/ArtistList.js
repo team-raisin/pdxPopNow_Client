@@ -10,7 +10,7 @@ function ArtistList(props){
   const artistList = artists.map((artist, i) => { 
     return <li key={i}><Link className={styles.link} to={`/${artist._id}`}>
       <img alt={`profile image for ${artist.name}`} src={getImageUrl(artist.img, ['w_700'])} />
-      { artist.artistName }
+      <p>{ artist.artistName }</p>
     </Link>
     </li>;
   });
