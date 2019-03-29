@@ -22,11 +22,11 @@
 .bandcamp {
     width: 4em;
     height: 4em;
-    color: rgb(98, 154, 169);
+    color: rgb(32, 226, 113);
     transition: 0.1s ease-in;
     &:hover {
         transform: translateY(-1em);
-        filter: drop-shadow(0 0 1em rgb(98, 154, 169));
+        filter: drop-shadow(0 0 .2em rgb(102, 228, 140));
     }
 }
 .description {
@@ -43,23 +43,23 @@
     text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 .facebook {
-    color: rgb(55, 101, 163);
+    color: rgb(32, 226, 113);
     width: 4em;
     height: 4em;
     transition: 0.1s ease-in;
     &:hover {
         transform: translateY(-1em);
-        filter: drop-shadow(0 0 1em rgb(55, 101, 163));
+        filter: drop-shadow(0 0 .2em rgb(102, 228, 140));
     }
 }
 .instagram {
     width: 4em;
     height: 4em;
-    color: rgb(214, 42, 118);
+    color: rgb(32, 226, 113);
     transition: 0.1s ease-in;
     &:hover {
         transform: translateY(-1em);
-        filter: drop-shadow(0 0 1em rgb(214, 42, 118));
+        filter: drop-shadow(0 0 .2em rgb(102, 228, 140));
     }
 }
 .leftColumn {
@@ -109,12 +109,12 @@
     font-weight: 800;
 }
 .socialMediaContainer {
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    padding: 1%;
+    padding: .25%;
 }
 .songSection {
     display: flex;
@@ -127,11 +127,11 @@
 .soundcloud {
     width: 4em;
     height: 4em;
-    color: rgb(253, 132, 0);
+    color: rgb(32, 226, 113);
     transition: 0.1s ease-in;
     &:hover {
         transform: translateY(-1em);
-        filter: drop-shadow(0 0 1em rgb(253, 132, 0));
+        filter: drop-shadow(0 0 .2em rgb(102, 228, 140));
     }
 }
 .soundcloudContainer {
@@ -141,11 +141,11 @@
 .twitter {
     width: 4em;
     height: 4em;
-    color: rgb(0, 172, 238);
+    color: rgb(32, 226, 113);
     transition: 0.1s ease-in;
     &:hover {
         transform: translateY(-1em);
-        filter: drop-shadow(0 0 1em rgb(0, 172, 238));
+        filter: drop-shadow(0 0 .2em rgb(102, 228, 140));
     }
 }
 .vimeo {
@@ -155,7 +155,7 @@
     transition: 0.1s ease-in;
     &:hover {
         transform: translateY(-1em);
-        filter: drop-shadow(0 0 1em rgb(26, 183, 234));
+        filter: drop-shadow(0 0 .2em rgb(102, 228, 140));
     } 
 }
 .website {
@@ -170,11 +170,11 @@
 .youtube {
     width: 4em;
     height: 4em;
-    color: rgb(221, 35, 32);
+    color:rgb(32, 226, 113);
     transition: 0.1s ease-in;
     &:hover {
         transform: translateY(-1em);
-        filter: drop-shadow(0 0 1em rgb(221, 35, 32));
+        filter: drop-shadow(0 0 .2em rgb(102, 228, 140));
     }
 }
 @keyframes fadein {
