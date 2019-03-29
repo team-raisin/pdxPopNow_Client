@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import styles from './Form.css';
 import PropTypes from 'prop-types';
-import Footer from '../footer/Footer';
+
 
 class ArtistForm extends PureComponent {
   static propTypes = {
@@ -88,7 +88,7 @@ class ArtistForm extends PureComponent {
           <input className={styles.input}type='text' name='youtube' onChange={this.handleChange} placeholder='Youtube URL' />  
           <input className={styles.input}type='text' name='vimeo' onChange={this.handleChange} placeholder='Vimeo URL' />  
           <label className={styles.label}>Select Music Genre: </label>
-          <select className={styles.button}name='genre' onChange={this.handleChange}>
+          <select className={styles.select}name='genre' onChange={this.handleChange}>
             <option name='genre' value="acoustic">Acoustic</option>
             <option name='genre' value="blues">Blues</option>
             <option name='genre' value="country">Country</option>
@@ -114,14 +114,13 @@ class ArtistForm extends PureComponent {
             <option name='genre' value="techno">Techno</option>
             <option name='genre' value="world">World</option>
           </select>
-          <br></br>
+          
           <textarea className={styles.textarea}name="description" placeholder="Please include a short bio" onChange={this.handleChange}></textarea>
-          <br></br>
-          <br></br>
+          
           <button className={styles.button}>Submit</button> 
         </form>
       </section>
-      <Footer />
+
       </>
     );
   }
