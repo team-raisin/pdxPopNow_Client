@@ -1,11 +1,103 @@
-.header {
-  color: black;
+.header{
+
   padding: 0;
   margin: 0;
+  height: 300px;
+  display: grid;
+  width: 100%;
+
+  grid-template-columns: 1fr 1fr;
+  
 }
+
+ .slide{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 300px;
+  animation: slide 12s infinite;
+  overflow: hidden;
+  
+
+}
+
+.slide:nth-of-type(1){
+  left: 0%;
+  animation-delay: -1s;
+  background-image: url("../../assets/abstract-music-rock-bw.jpg");
+  background-size: cover;
+  background-position: center;
+} 
+
+.slide:nth-of-type(2){
+  animation-delay: 2s;
+  background-image: url("../../assets/microphone-2130806_1920_cropped.jpg");
+  background-size: cover;
+  background-position: center;
+} 
+
+.slide:nth-of-type(3){
+  animation-delay: 5s;
+  background-image: url("../../assets/crowd.jpg");
+  background-size: cover;
+  background-position: center;
+} 
+.slide:nth-of-type(4){
+  left: 0%;
+  animation-delay: 8s;
+  background-image: url("../../assets/disk.jpg");
+  background-size: cover;
+  background-position: center;
+} 
+
+@keyframes slide {
+  0% { left: 100%; width: 100%;}
+  5% { left: 0%; }
+  25% { left: 0%; }
+  30% { left: -100%; width: 100% }
+  30.0001% { left: -100%; width: 0%;}
+  100% { left: 100%; width: 0%}
+}
+
+
+
+
+
+
+.header h2 {
+  color: white;
+  margin-top: 0;
+  padding: 2%;
+  font-size: 6em;
+  z-index: 10;
+}
+
+.header aside{
+  width: auto;
+  justify-self: end;
+  margin-right: 2%;
+}
+
+.header ul {
+  color: #f67f2e;
+  font-size: 1.2em;
+  
+}
+
+.header nav li {
+  list-style: none;
+  margin-right: 7%;
+  color: white;
+  display: inline;
+}
+
+
 
 .background {
   z-index: -1;
   position: relative;
   width: 100%;
 }
+
+
+
