@@ -87,7 +87,7 @@ class ArtistForm extends PureComponent {
           <input className={styles.input}type='text' name='soundcloud' onChange={this.handleChange} placeholder='Soundcloud URL' />  
           <input className={styles.input}type='text' name='youtube' onChange={this.handleChange} placeholder='Youtube URL' />  
           <input className={styles.input}type='text' name='vimeo' onChange={this.handleChange} placeholder='Vimeo URL' />  
-
+          <label className={styles.label}>Select Music Genre: </label>
           <select className={styles.button}name='genre' onChange={this.handleChange}>
             <option name='genre' value="acoustic">Acoustic</option>
             <option name='genre' value="blues">Blues</option>

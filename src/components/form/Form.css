@@ -26,14 +26,14 @@
   padding: 10px;
   width:250px;
   background-color: rgba(0,0,0,0) !important;
-  color: white;
+  color: #fa9314;
   font-size: 15px;
   text-align: left;
   margin-bottom: 5px !important;
  }
- ::placeholder {color:rgb(24, 24, 24)}
+ ::placeholder {color:rgb(255, 255, 255)}
  .input:focus {
-   background-color: #aee213;
+   background-color: #ffffff;
    border-radius: 5px;
    outline:none;
  }
@@ -42,6 +42,9 @@
   min-width: 275px;
   max-width: 275px;
  }
+ .label{
+   color:white;
+   font-family: montserrat !important;}
 .button {
   font-family: montserrat !important;
 
