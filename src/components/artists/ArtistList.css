@@ -30,10 +30,10 @@ h1 {
     
   .link {
     text-decoration: none;
-    color: black;
+    color: #fbae40;
 
     &:hover {
-      color: #fbae40;
+      color: white;
     }
   }
 
