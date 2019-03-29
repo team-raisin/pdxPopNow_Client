@@ -8,11 +8,11 @@ import { Link } from 'react-router-dom';
 function ArtistList(props){
   const { artists } = props;
   const artistList = artists.map((artist, i) => { 
-    return <Link className={styles.link} to={`/${artist._id}`} key={i}><li>
+    return <li key={i}><Link className={styles.link} to={`/${artist._id}`}>
       <img alt={`profile image for ${artist.name}`} src={getImageUrl(artist.img, ['w_700'])} />
       { artist.artistName }
-    </li>
-    </Link>;
+    </Link>
+    </li>;
   });
   return (
     <section className={styles.artistListSection}>
