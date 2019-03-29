@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
+  overflow: scroll;
 }
 .h2 {
   width:60%;
@@ -22,7 +23,6 @@
   display:flex;
   flex-direction: column;
   align-items: center;
-  max-height: 100%;
   width: 80vw;
   margin: 0 auto 0 auto;
   padding:2%;
