@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import styles from './Nav.css';
+import style from './Nav.css';
 
 export default function Nav() {
   return (
     <>
-      <nav className={styles.headerNav}>
+      <nav className={style.headerNav}>
         <ul>
-          <Link className={styles.linkers} to='/'><li>Home</li></Link>
-          <Link className={styles.linkers}  to='/artistform'><li>Sign Up</li></Link>
+          <Link className={style.linkers} to='/'><li>Home</li></Link>
+          <Link className={style.linkers}  to='/artistform'><li>Sign Up</li></Link>
         </ul>
       </nav>
     </>
