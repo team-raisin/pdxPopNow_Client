@@ -7,8 +7,9 @@ const initialState = {
   artist: null
 };
 
+// what about including some loading state
 export default function reducer(state = initialState, action) {
-  switch(action.type) {
+  switch (action.type) {
     case FETCH_ARTIST:
       return {
         ...state,
