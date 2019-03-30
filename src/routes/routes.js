@@ -9,6 +9,9 @@ import ArtistByID from '../containers/ArtistByID';
 export const ROUTES = {
   ArtistForm: {
     path: '/artistform',
+    // you require auth to create an artist here
+    // but the back-end does not require auth
+    // to create an artist?
     Component: withSession(CreateArtist),
     linkTo: () => '/artistform'
   },

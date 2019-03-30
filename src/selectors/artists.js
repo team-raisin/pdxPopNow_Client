@@ -4,12 +4,12 @@ export const getArtists = state => {
 };
 
 export const getSearchArtist = state => {
+  // don't lowercase here
   return state.artists.artistSearch.toLowerCase();
 };
 
 export const getFilteredArtists = state => {
-  console.log('***', state);
-  const searchTerm = getSearchArtist(state);
+  const searchTerm = getSearchArtist(state).toLowerCase();
   return getArtists(state).filter(artist => {
     return artist.genre[0].toLowerCase() === searchTerm || artist.artistName.toLowerCase().includes(searchTerm);
   });

@@ -20,6 +20,7 @@ const mapDispatchToProps = dispatch => ({
   artistSearch: (search) => dispatch(artistSearch(search))
 });
 
+// call this FilteredArtists
 class AllArtists extends PureComponent {
   static propTypes = {
     artists: PropTypes.array.isRequired,
@@ -36,7 +37,7 @@ class AllArtists extends PureComponent {
       <>
         <Header />
         <ArtistSearch artistSearch={this.props.artistSearch} />
-        <ArtistList artists={artists}/>
+        <ArtistList artists={artists} />
         <Footer />
       </>
     );

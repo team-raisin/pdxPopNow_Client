@@ -1,4 +1,4 @@
-import { 
+import {
   FETCH_ARTISTS,
   CREATE_ARTIST,
   ARTIST_SEARCH
@@ -9,10 +9,11 @@ const initialState = {
   artistSearch: ''
 };
 
+// what about including some loading state?
 export default function reducer(state = initialState, { type, payload }) {
   switch(type) {
     case FETCH_ARTISTS:
-      return { 
+      return {
         ...state,
         artists: payload
       };
