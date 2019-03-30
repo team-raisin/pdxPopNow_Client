@@ -1,5 +1,5 @@
 PDX POP NOW!- 
-Our app curates an artist directory for the non-profit PDX Pop Now!. As a user, you can easily look through local artist's profiles and you can discover artists by your favorite genres as well! You may also sign up for an account to create an artist profile where you can easily update links to all your socials, contact info, photo, and description.
+Our app curates an artist directory for the non-profit PDX Pop Now! As a user, you can easily look through local artist's profiles and you can discover artists by your favorite genres as well! You may also sign up for an account to create an artist profile where you can easily update links to all your socials, contact info, photo, and description.
 
 Created By:
 Tyler Corbett: https://github.com/tylercorbett,
